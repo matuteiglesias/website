@@ -4,25 +4,50 @@ import { memo, type FC } from 'react';
 const HeadTags: FC = () => {
 	return (
 		<Head>
+			{/* Basic Metadata */}
 			<meta httpEquiv="Content-Type" content="text/html; charset=UTF-8" />
-			<meta httpEquiv="Expires" content="1y" />
-			<meta httpEquiv="Pragma" content="1y" />
-			<meta httpEquiv="Cache-Control" content="1y" />
-			<meta httpEquiv="Page-Enter" content="RevealTrans(Duration=2.0,Transition=2)" />
-			<meta httpEquiv="Page-Exit" content="RevealTrans(Duration=3.0,Transition=12)" />
-			<link rel="canonical" href="https://sapphirejs.dev" />
+			<meta name="description" content="MI — Data Scientist, AI Builder, Institutional Innovator." />
+			<meta name="author" content="Matías Iglesias" />
+
+			{/* Canonical URL */}
+			<link rel="canonical" href="https://matuteiglesias.link" />
+
+			{/* Preconnect and Fonts */}
 			<link rel="preconnect" href="https://fonts.googleapis.com" />
 			<link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
 			<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&display=swap" />
-			<link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
-			<link rel="icon" type="image/png" sizes="192x192" href="/icons/android-chrome-192x192.png" />
-			<link rel="icon" type="image/png" sizes="194x194" href="/icons/android-chrome-194x194.png" />
-			<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-			<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-			<link rel="manifest" href="/manifest.webmanifest" />
-			<link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#23529B" />
-			<link rel="shortcut icon" href="/favicon.ico" />
-			<link rel="apple-touch-startup-image" href="/icons/apple-startup.png" />
+
+			{/* Icons */}
+			<link rel="apple-touch-icon" sizes="57x57" href="/icons/apple-icon-57x57.png" />
+			<link rel="apple-touch-icon" sizes="60x60" href="/icons/apple-icon-60x60.png" />
+			<link rel="apple-touch-icon" sizes="72x72" href="/icons/apple-icon-72x72.png" />
+			<link rel="apple-touch-icon" sizes="76x76" href="/icons/apple-icon-76x76.png" />
+			<link rel="apple-touch-icon" sizes="114x114" href="/icons/apple-icon-114x114.png" />
+			<link rel="apple-touch-icon" sizes="120x120" href="/icons/apple-icon-120x120.png" />
+			<link rel="apple-touch-icon" sizes="144x144" href="/icons/apple-icon-144x144.png" />
+			<link rel="apple-touch-icon" sizes="152x152" href="/icons/apple-icon-152x152.png" />
+			<link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-icon-180x180.png" />
+			<link rel="icon" type="image/png" sizes="192x192" href="/icons/android-icon-192x192.png" />
+			<link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png" />
+			<link rel="icon" type="image/png" sizes="96x96" href="/icons/favicon-96x96.png" />
+			<link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png" />
+			<link rel="shortcut icon" href="/icons/favicon.ico" />
+			<link rel="manifest" href="/icons/manifest.json" />
+			<meta name="msapplication-TileColor" content="#ffffff" />
+			<meta name="msapplication-TileImage" content="/icons/ms-icon-144x144.png" />
+			<meta name="theme-color" content="#ffffff" />
+
+			{/* Optional SEO Enhancements */}
+			<meta property="og:title" content="Matías Iglesias — Data Scientist, AI Builder" />
+			<meta property="og:description" content="Building intelligent tools and public knowledge systems in Latin America." />
+			<meta property="og:url" content="https://matuteiglesias.link" />
+			<meta property="og:type" content="website" />
+			<meta property="og:image" content="/icons/android-icon-192x192.png" />
+
+			<meta name="twitter:card" content="summary_large_image" />
+			<meta name="twitter:title" content="Matías Iglesias — Data Scientist, AI Builder" />
+			<meta name="twitter:description" content="Building intelligent tools and public knowledge systems in Latin America." />
+			<meta name="twitter:image" content="/icons/android-icon-192x192.png" />
 		</Head>
 	);
 };
