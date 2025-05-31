@@ -5,7 +5,7 @@ import { themes } from 'prism-react-renderer';
 
 const Description =
 	'Matías Iglesias — Data Scientist, AI Builder, and Institutional Innovator. Building intelligent tools and public knowledge systems.';
-const BaseUrl = 'https://matuteiglesias.link';
+const BaseUrl = 'https://main.matuteiglesias.link';
 // const Email = 'youremail@domain.com'; // Optional — comment or add your email
 const Title = 'Matías Iglesias – Data Scientist';
 

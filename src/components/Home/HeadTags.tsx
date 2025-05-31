@@ -10,7 +10,7 @@ const HeadTags: FC = () => {
 			<meta name="author" content="Matías Iglesias" />
 
 			{/* Canonical URL */}
-			<link rel="canonical" href="https://matuteiglesias.link" />
+			<link rel="canonical" href="https://main.matuteiglesias.link" />
 
 			{/* Preconnect and Fonts */}
 			<link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -40,7 +40,7 @@ const HeadTags: FC = () => {
 			{/* Optional SEO Enhancements */}
 			<meta property="og:title" content="Matías Iglesias — Data Scientist, AI Builder" />
 			<meta property="og:description" content="Building intelligent tools and public knowledge systems in Latin America." />
-			<meta property="og:url" content="https://matuteiglesias.link" />
+			<meta property="og:url" content="https://main.matuteiglesias.link" />
 			<meta property="og:type" content="website" />
 			<meta property="og:image" content="/icons/android-icon-192x192.png" />
 

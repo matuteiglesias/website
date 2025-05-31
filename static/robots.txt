@@ -1,4 +1,4 @@
 # https://www.robotstxt.org/robotstxt.html
-Sitemap: https://matuteiglesias.link/sitemap.xml
+Sitemap: https://main.matuteiglesias.link/sitemap.xml
 User-agent: *
 Disallow:
