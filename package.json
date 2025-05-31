@@ -1,9 +1,6 @@
 {
 	"name": "root-website",
 	"version": "1.0.0",
-	"workspaces": [
-		"projects/*"
-	],
 	"description": "Website with the Sapphire guide, hosted on https://sapphirejs.dev",
 	"author": "@sapphire",
 	"license": "MIT",
