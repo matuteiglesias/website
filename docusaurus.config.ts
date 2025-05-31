@@ -1,14 +1,15 @@
-import type * as Preset from '@docusaurus/preset-classic';
 import type { Config } from '@docusaurus/types';
-import { convertNpmToPackageManagers } from '@sapphire/docusaurus-plugin-npm2yarn2pnpm';
-import { ts2esm2cjs } from '@sapphire/docusaurus-plugin-ts2esm2cjs';
 import { themes } from 'prism-react-renderer';
 
+// Optional: If you're not using code samples, you can remove this line too.
+
 const Description =
-	'Sapphire is a next-gen Discord bot framework for developers of all skill levels to make the best JavaScript/TypeScript based bots possible.';
-const BaseUrl = 'https://sapphirejs.dev';
-const Email = 'contact@sapphirejs.dev';
-const Title = 'Sapphire Framework';
+	'Matías Iglesias — Data Scientist, AI Builder, and Institutional Innovator. Building intelligent tools and public knowledge systems.';
+const BaseUrl = 'https://matuteiglesias.link';
+// const Email = 'youremail@domain.com'; // Optional — comment or add your email
+const Title = 'Matías Iglesias – Data Scientist';
+
+const Email = 'matuteiglesias@gmail.com';
 
 const baseTypedocOptions = {
 	/* typedoc */
@@ -24,7 +25,7 @@ const baseTypedocOptions = {
 };
 
 const config: Config = {
-	title: 'Sapphire',
+	title: 'Matías Iglesias – Data Scientist',
 	url: BaseUrl,
 	baseUrl: '/',
 	onBrokenLinks: 'warn',
@@ -32,8 +33,8 @@ const config: Config = {
 	onDuplicateRoutes: 'warn',
 	favicon: 'favicon.ico',
 	tagline: Description,
-	organizationName: 'sapphiredev',
-	projectName: 'framework',
+	organizationName: 'matuteiglesias', // your GitHub username or any organization you prefer
+	projectName: 'website', // name of the repo or just 'website'
 	themes: [],
 	markdown: {
 		format: 'detect'
@@ -44,7 +45,15 @@ const config: Config = {
 
 	i18n: {
 		defaultLocale: 'en',
-		locales: ['en']
+		locales: ['en', 'es'], // English and Spanish
+		localeConfigs: {
+			en: {
+				label: 'English'
+			},
+			es: {
+				label: 'Español'
+			}
+		}
 	},
 
 	plugins: [
@@ -70,82 +79,6 @@ const config: Config = {
 					}
 				]
 			}
-		],
-		[
-			'docusaurus-plugin-typedoc',
-			{
-				...baseTypedocOptions,
-				id: 'framework',
-				entryPoints: ['./projects/framework/src/index.ts'],
-				tsconfig: './projects/framework/src/tsconfig.json',
-				readme: './projects/framework/README.md',
-				out: 'docs/Documentation/api-framework',
-				plugin: ['typedoc-plugin-mdn-links', 'typedoc-plugin-djs-links']
-			}
-		],
-		[
-			'docusaurus-plugin-typedoc',
-			{
-				...baseTypedocOptions,
-				id: 'Pieces',
-				entryPoints: ['./projects/pieces/src/index.ts'],
-				tsconfig: './projects/pieces/src/tsconfig.json',
-				readme: './projects/pieces/README.md',
-				out: 'docs/Documentation/api-pieces',
-				plugin: ['typedoc-plugin-mdn-links']
-			}
-		],
-		[
-			'docusaurus-plugin-typedoc',
-			{
-				...baseTypedocOptions,
-				id: 'Utilities',
-				entryPointStrategy: 'packages',
-				entryPoints: ['./projects/utilities/packages/*'],
-				exclude: [
-					'./projects/utilities/packages/eslint-config',
-					'./projects/utilities/packages/eslint-plugin-result',
-					'./projects/utilities/packages/prettier-config',
-					'./projects/utilities/packages/ts-config'
-				],
-				out: 'docs/Documentation/api-utilities',
-				plugin: ['typedoc-plugin-mdn-links', 'typedoc-plugin-djs-links']
-			}
-		],
-		[
-			'docusaurus-plugin-typedoc',
-			{
-				...baseTypedocOptions,
-				id: 'Plugins',
-				entryPointStrategy: 'packages',
-				entryPoints: ['./projects/plugins/packages/*'],
-				out: 'docs/Documentation/api-plugins',
-				plugin: ['typedoc-plugin-mdn-links', 'typedoc-plugin-djs-links']
-			}
-		],
-		[
-			'docusaurus-plugin-typedoc',
-			{
-				...baseTypedocOptions,
-				id: 'Type',
-				entryPoints: ['./projects/type/src/lib/index.ts'],
-				tsconfig: './projects/type/src/tsconfig.json',
-				readme: './projects/type/README.md',
-				out: 'docs/Documentation/api-type',
-				plugin: ['typedoc-plugin-mdn-links']
-			}
-		],
-		[
-			'docusaurus-plugin-typedoc',
-			{
-				...baseTypedocOptions,
-				id: 'Shapeshift',
-				entryPoints: ['./projects/shapeshift/src/index.ts'],
-				tsconfig: './projects/shapeshift/src/tsconfig.json',
-				readme: './projects/shapeshift/README.md',
-				out: 'docs/Documentation/api-shapeshift',
-				plugin: ['typedoc-plugin-mdn-links']
-			}
 		]
 	],
 
@@ -155,8 +88,7 @@ const config: Config = {
 			{
 				docs: {
 					sidebarPath: './sidebars.ts',
-					editUrl: 'https://github.com/sapphiredev/website/edit/main/',
-					remarkPlugins: [convertNpmToPackageManagers, ts2esm2cjs],
+					editUrl: 'https://github.com/matuteiglesias/website/edit/main/',
 					showLastUpdateAuthor: true,
 					showLastUpdateTime: true
 				},
@@ -164,16 +96,17 @@ const config: Config = {
 				theme: {
 					customCss: ['./src/css/custom.css', './src/css/tippy-discord.css']
 				}
-			} satisfies Preset.Options
+			}
 		]
 	],
 
 	themeConfig: {
-		image: 'https://www.sapphirejs.dev/icons/opengraph.png',
+		image: 'icons/matias-logo32.png',
 		colorMode: {
 			defaultMode: 'dark',
 			respectPrefersColorScheme: true
 		},
+
 		metadata: [
 			{ name: 'apple-mobile-web-app-capable', content: 'yes' },
 			{ name: 'apple-mobile-web-app-status-bar-style', content: 'black' },
@@ -219,10 +152,10 @@ const config: Config = {
 			{ property: 'og:url', content: BaseUrl }
 		],
 		navbar: {
-			title: 'Sapphire',
+			title: 'Matías Iglesias',
 			logo: {
-				alt: 'Sapphire Logo',
-				src: 'icons/gem.svg'
+				alt: 'Matías Iglesias Logo',
+				src: 'icons/matias-logo32.png' // optional — replace with your logo
 			},
 			items: [
 				{
@@ -234,22 +167,26 @@ const config: Config = {
 				{
 					to: 'docs/General/Welcome',
 					position: 'left',
-					label: 'Documentation',
+					label: 'About',
 					activeBaseRegex: '^/docs/(General|Documentation)/.+$'
 				},
 				{
-					to: 'docs/Guide/getting-started/getting-started-with-sapphire',
+					to: 'docs/General/Welcome',
 					position: 'left',
-					label: 'Guide',
-					activeBaseRegex: '^/docs/Guide/.+$'
+					label: 'Build Logs'
+				},
+				//   {
+				// 	to: 'docs/General/projects',
+				// 	label: 'Projects',
+				// 	position: 'left'
+				//   },
+				{
+					to: 'docs/General/cv',
+					label: 'CV',
+					position: 'left'
 				},
 				{
-					href: 'https://sapphirejs.dev/discord',
-					label: 'Discord',
-					position: 'right'
-				},
-				{
-					href: 'https://github.com/sapphiredev',
+					href: 'https://github.com/matuteiglesias', // Replace with your GitHub
 					label: 'GitHub',
 					position: 'right'
 				}
@@ -257,60 +194,13 @@ const config: Config = {
 		},
 		footer: {
 			style: 'dark',
+			// Optional logo (replace with your own or remove entirely)
 			logo: {
-				alt: 'Powered By Polypane',
-				src: 'icons/powered-by-polypane.svg'
+				alt: 'Matías Iglesias Logo',
+				src: 'icons/matias-logo32.png'
 			},
-			links: [
-				{
-					title: 'Donate',
-					items: [
-						{
-							label: 'Ko-fi',
-							href: 'https://sapphirejs.dev/kofi'
-						},
-						{
-							label: 'PayPal',
-							href: 'https://sapphirejs.dev/paypal'
-						},
-						{
-							label: 'Patreon',
-							href: 'https://sapphirejs.dev/patreon'
-						},
-						{
-							label: 'Open Collective',
-							href: 'https://sapphirejs.dev/opencollective'
-						}
-					]
-				},
-				{
-					title: 'Our Platforms',
-					items: [
-						{
-							label: 'Discord Server',
-							href: 'https://sapphirejs.dev/discord'
-						},
-						{
-							label: 'NPM Organization',
-							href: 'https://www.npmjs.com/org/sapphire'
-						},
-						{
-							label: 'GitHub Organization',
-							href: 'https://github.com/sapphiredev'
-						}
-					]
-				},
-				{
-					title: 'Our Sponsors',
-					items: [
-						{
-							label: 'Polypane',
-							href: 'https://polypane.app'
-						}
-					]
-				}
-			],
-			copyright: `Copyright © ${new Date().getFullYear()} The Sapphire Community and its contributors.`
+			links: [], // no links needed — already featured elsewhere
+			copyright: `© ${new Date().getFullYear()} Matías Iglesias. All rights reserved.`
 		},
 		prism: {
 			defaultLanguage: 'javascript',
@@ -324,7 +214,7 @@ const config: Config = {
 			indexName: 'sapphirejs',
 			contextualSearch: false
 		}
-	} satisfies Preset.ThemeConfig
+	}
 };
 
 export default config;
