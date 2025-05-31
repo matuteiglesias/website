@@ -1,3 +1,0 @@
-[*.{js,mjs,ts,md,mdx}]
-indent_size = 2
-indent_style = space
