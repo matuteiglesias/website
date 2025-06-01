@@ -23,6 +23,36 @@ const HeadTags: FC = () => {
 				}}
 			/>
 
+			<script
+				type="application/ld+json"
+				dangerouslySetInnerHTML={{
+					__html: JSON.stringify({
+						'@context': 'https://schema.org',
+						'@type': 'BreadcrumbList',
+						itemListElement: [
+							{
+								'@type': 'ListItem',
+								position: 1,
+								name: 'Home',
+								item: 'https://main.matuteiglesias.link/'
+							},
+							{
+								'@type': 'ListItem',
+								position: 2,
+								name: 'General',
+								item: 'https://main.matuteiglesias.link/docs/General/'
+							},
+							{
+								'@type': 'ListItem',
+								position: 3,
+								name: 'Welcome',
+								item: 'https://main.matuteiglesias.link/docs/General/Welcome'
+							}
+						]
+					})
+				}}
+			/>
+
 			{/* Basic Metadata */}
 			<meta httpEquiv="Content-Type" content="text/html; charset=UTF-8" />
 			<meta name="description" content="MI — Data Scientist, AI Builder, Institutional Innovator." />
