@@ -32,6 +32,12 @@ const FeatureList: FeatureItem[] = [
 					<li>Institutional Experience</li>
 					<li>Global Perspective</li>
 				</ul>
+
+				<p>
+					<a href="https://main.matuteiglesias.link/docs/BuildLog/202505_devlog" target="_blank" rel="noopener noreferrer">
+						📓 Follow my daily work on my Dev Logs
+					</a>
+				</p>
 			</>
 		)
 	},
