@@ -1,9 +1,28 @@
+// body?
+
+// <!-- Google Tag Manager (noscript) -->
+// <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M6XT2K6T"
+// height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+// <!-- End Google Tag Manager (noscript) -->
+
 import Head from '@docusaurus/Head';
 import { memo, type FC } from 'react';
 
 const HeadTags: FC = () => {
 	return (
 		<Head>
+			<script
+				dangerouslySetInnerHTML={{
+					__html: `
+				(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+				new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+				j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+				'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+				})(window,document,'script','dataLayer','GTM-M6XT2K6T');
+				`
+				}}
+			/>
+
 			{/* Basic Metadata */}
 			<meta httpEquiv="Content-Type" content="text/html; charset=UTF-8" />
 			<meta name="description" content="MI — Data Scientist, AI Builder, Institutional Innovator." />
@@ -11,6 +30,9 @@ const HeadTags: FC = () => {
 
 			{/* Canonical URL */}
 			<link rel="canonical" href="https://main.matuteiglesias.link" />
+			<link rel="alternate" hrefLang="en" href="https://main.matuteiglesias.link/" />
+			<link rel="alternate" hrefLang="es" href="https://main.matuteiglesias.link/es/" />
+			<link rel="alternate" hrefLang="pt" href="https://main.matuteiglesias.link/pt/" />
 
 			{/* Preconnect and Fonts */}
 			<link rel="preconnect" href="https://fonts.googleapis.com" />

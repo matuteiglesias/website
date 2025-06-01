@@ -40,6 +40,7 @@ const config: Config = {
 		format: 'detect'
 	},
 	future: {
+		v4: true,
 		experimental_faster: true
 	},
 
