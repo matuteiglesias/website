@@ -51,7 +51,7 @@ const HeadTags: FC = () => {
 							{
 								'@type': 'ListItem',
 								position: 4,
-								name: 'Projects',
+								name: 'My Deployments',
 								item: 'https://main.matuteiglesias.link/docs/General/projects'
 							}
 						]
