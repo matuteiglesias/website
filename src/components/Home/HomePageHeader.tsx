@@ -19,7 +19,7 @@ const HomePageHeader: FC = () => {
 				<h2 className={styles.tagline}>Data Scientist, AI Builder, and Institutional Innovator</h2>
 
 				{/* Optional Description */}
-				<p className={styles.description}>Building intelligent tools and public knowledge systems in Latin America.</p>
+				<p className={styles.description}>Building intelligent tools and public knowledge systems.</p>
 
 				{/* Optional CTA Button */}
 				{/* <a href="/projects" className={styles.ctaButton}>View My Projects</a> */}

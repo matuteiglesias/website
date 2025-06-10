@@ -47,6 +47,12 @@ const HeadTags: FC = () => {
 								position: 3,
 								name: 'Welcome',
 								item: 'https://main.matuteiglesias.link/docs/General/Welcome'
+							},
+							{
+								'@type': 'ListItem',
+								position: 4,
+								name: 'Projects',
+								item: 'https://main.matuteiglesias.link/docs/General/projects'
 							}
 						]
 					})

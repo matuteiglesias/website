@@ -176,11 +176,11 @@ const config: Config = {
 					position: 'left',
 					label: 'Build Logs'
 				},
-				//   {
-				// 	to: 'docs/General/projects',
-				// 	label: 'Projects',
-				// 	position: 'left'
-				//   },
+				{
+					to: 'docs/General/projects',
+					label: 'My Deployments',
+					position: 'left'
+				},
 				{
 					to: 'docs/General/cv',
 					label: 'CV',

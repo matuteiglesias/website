@@ -38,6 +38,13 @@ const FeatureList: FeatureItem[] = [
 						📓 Follow my daily work on my Dev Logs
 					</a>
 				</p>
+
+				<p>
+					<a href="https://thesis.matuteiglesias.link" target="_blank" rel="noopener noreferrer">
+						Explore my groundbreaking PhD thesis on Aggregation
+					</a>{' '}
+					— a state-of-the-art contribution in computational economics, and a robust framework for tracking micro-to-macro relationships.
+				</p>
 			</>
 		)
 	},
