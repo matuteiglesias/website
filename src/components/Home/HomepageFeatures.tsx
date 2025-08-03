@@ -34,8 +34,8 @@ const FeatureList: FeatureItem[] = [
 				</ul>
 
 				<p>
-					<a href="https://main.matuteiglesias.link/docs/BuildLog/202505_devlog" target="_blank" rel="noopener noreferrer">
-						📓 Follow my daily work on my Dev Logs
+					<a href="https://journal.matuteiglesias.link" target="_blank" rel="noopener noreferrer">
+						📓 Explore my daily work on my Developer Journal
 					</a>
 				</p>
 
