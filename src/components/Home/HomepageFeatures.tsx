@@ -77,9 +77,6 @@ const FeatureList: FeatureItem[] = [
 					<li>
 						<Link to="https://www.rcai.it/matias-iglesias/">RCAI Italy</Link>
 					</li>
-					<li>
-						<Link to="https://cenital.com/author/matias-nehuen-iglesias/">Cenital</Link>
-					</li>
 				</ul>
 			</>
 		)

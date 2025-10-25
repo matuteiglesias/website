@@ -5,7 +5,7 @@ const sidebars: SidebarsConfig = {
 		{
 			type: 'category',
 			label: 'General',
-			items: ['General/Welcome', 'General/projects', 'General/cv'],
+			items: ['General/Welcome', 'General/tech', 'General/civic', 'General/cv', 'General/projects'],
 			collapsed: false
 		}
 		// {
