@@ -172,13 +172,13 @@ const config: Config = {
 					activeBaseRegex: '^/docs/(General|Documentation)/.+$'
 				},
 				{
-					to: 'docs/General/Welcome',
-					position: 'left',
-					label: 'Build Logs'
+					to: 'docs/General/tech',
+					label: 'Sr Developer',
+					position: 'left'
 				},
 				{
-					to: 'docs/General/projects',
-					label: 'My Deployments',
+					to: 'docs/General/civic',
+					label: 'Civic Data Infra',
 					position: 'left'
 				},
 				{

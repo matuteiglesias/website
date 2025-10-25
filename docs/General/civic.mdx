@@ -3,6 +3,50 @@ title: Civic Deployments
 sidebar_position: 2
 ---
 
+import Link from '@docusaurus/Link';
+
+export function Deployment({ href, src, alt, title, meta, docHref }) {
+  return (
+    <div
+      style={{
+        display: 'flex',
+        alignItems: 'center',
+        gap: '10px',
+        marginTop: '6px',
+        marginBottom: '2px',
+        fontSize: '0.95rem',
+        lineHeight: 1.35
+      }}
+    >
+      <Link to={href} target="_blank" rel="noopener noreferrer" style={{ display: 'inline-block' }}>
+        <img
+          src={src}
+          alt={alt}
+          width={120}
+          height={75}
+          loading="lazy"
+          style={{ borderRadius: 6, boxShadow: '0 1px 3px rgba(0,0,0,.15)', objectFit: 'cover' }}
+        />
+      </Link>
+      <div>
+        <strong>Deployment: </strong>
+        <Link to={href} target="_blank" rel="noopener noreferrer">
+          {title}
+        </Link>
+        {meta ? <div style={{ opacity: 0.8, fontSize: '.9rem' }}>{meta}</div> : null}
+        {docHref ? (
+          <div style={{ opacity: 0.8, fontSize: '.9rem' }}>
+            Docs:{' '}
+            <Link to={docHref} target="_blank" rel="noopener noreferrer">
+              {docHref}
+            </Link>
+          </div>
+        ) : null}
+      </div>
+    </div>
+  );
+}
+
 **Applied Data Scientist & Economist** building civic intelligence infrastructures — systems that turn raw data, norms,
 and signals into decision-ready evidence for researchers, governments, and policy teams.
 
@@ -18,6 +62,16 @@ and signals into decision-ready evidence for researchers, governments, and polic
    projects (Eric Mvukiyehe PI).
 4. **Advanced Volatility & Network Models** – extended PhD research into how micro shocks aggregate to macro volatility
    using computational and nonlinear-systems methods.
+
+{/* Research Ops / Publications */}
+
+<Deployment
+  href="https://thesis.matuteiglesias.link/"
+  src="/img/thesis-screenshot.png"
+  alt="PhD thesis site thumbnail"
+  title="PhD Thesis Online"
+  meta="Docusaurus site with chapter structure, and quick navigation."
+/>
 
 ---
 
@@ -62,6 +116,17 @@ and signals into decision-ready evidence for researchers, governments, and polic
     thematic digests.
 16. **Integrated Economic Atlas Communication Stack** – merges dashboards, text generation, and publication automation
     for evidence-based storytelling.
+
+{/* Socioeconomic Measurement Platforms */}
+
+<Deployment
+  href="http://matuteiglesias.link/Pobreza"
+  src="/img/poverty-atlas-screenshot.png"
+  alt="Argentina Poverty Atlas thumbnail"
+  title="Argentina’s Poverty Atlas"
+  meta="Interactive map with high-resolution indicators and a reproducible pipeline."
+  docHref="https://matuteiglesias.github.io/atlas-site/"
+/>
 
 ---
 
