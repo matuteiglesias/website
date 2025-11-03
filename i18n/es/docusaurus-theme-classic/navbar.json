@@ -1,0 +1,8 @@
+{
+	"navbar.docs": { "message": "Documentación" },
+	"navbar.home": { "message": "Inicio" },
+	"navbar.projects": { "message": "Proyectos" },
+	"navbar.tech": { "message": "Tecnología" },
+	"navbar.civic": { "message": "Cívico" },
+	"navbar.cv": { "message": "CV" }
+}
