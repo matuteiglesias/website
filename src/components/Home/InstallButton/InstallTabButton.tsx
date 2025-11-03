@@ -1,8 +1,15 @@
 import { ClipboardIcon } from '@heroicons/react/24/outline';
 import Tippy from '@tippyjs/react';
-import clsx from 'clsx';
+import * as _clsxModule from 'clsx';
+
 import { useState } from 'react';
 import styles from './InstallTabButton.module.css';
+const clsx: (...parts: any[]) => string =
+	typeof _clsxModule === 'function'
+		? (_clsxModule as unknown as (...parts: any[]) => string)
+		: _clsxModule && typeof (_clsxModule as any).default === 'function'
+			? ((_clsxModule as any).default as (...parts: any[]) => string)
+			: (...parts: any[]) => parts.filter(Boolean).join(' ');
 
 interface Props {
 	installCommand: string;
