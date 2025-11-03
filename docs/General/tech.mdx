@@ -4,48 +4,7 @@ sidebar_position: 1
 ---
 
 import Link from '@docusaurus/Link';
-
-export function Deployment({ href, src, alt, title, meta, docHref }) {
-  return (
-    <div
-      style={{
-        display: 'flex',
-        alignItems: 'center',
-        gap: '10px',
-        marginTop: '6px',
-        marginBottom: '2px',
-        fontSize: '0.95rem',
-        lineHeight: 1.35
-      }}
-    >
-      <Link to={href} target="_blank" rel="noopener noreferrer" style={{ display: 'inline-block' }}>
-        <img
-          src={src}
-          alt={alt}
-          width={120}
-          height={75}
-          loading="lazy"
-          style={{ borderRadius: 6, boxShadow: '0 1px 3px rgba(0,0,0,.15)', objectFit: 'cover' }}
-        />
-      </Link>
-      <div>
-        <strong>Deployment: </strong>
-        <Link to={href} target="_blank" rel="noopener noreferrer">
-          {title}
-        </Link>
-        {meta ? <div style={{ opacity: 0.8, fontSize: '.9rem' }}>{meta}</div> : null}
-        {docHref ? (
-          <div style={{ opacity: 0.8, fontSize: '.9rem' }}>
-            Docs:{' '}
-            <Link to={docHref} target="_blank" rel="noopener noreferrer">
-              {docHref}
-            </Link>
-          </div>
-        ) : null}
-      </div>
-    </div>
-  );
-}
+import Deployment from '@site/src/components/Docs/Deployment';
 
 **Senior AI Systems Engineer & Technical Project Lead** specializing in production-grade AI and data infrastructures —
 from ingestion and orchestration to analytics, deployment, and automation at scale.
