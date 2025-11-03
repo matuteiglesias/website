@@ -1,6 +1,8 @@
 import type { Config } from '@docusaurus/types';
 import { themes } from 'prism-react-renderer';
 
+const isPwaEnabled = process.env.DISABLE_PWA !== '1';
+
 // Optional: If you're not using code samples, you can remove this line too.
 
 const Description =
@@ -46,42 +48,18 @@ const config: Config = {
 
 	i18n: {
 		defaultLocale: 'en',
-		locales: ['en', 'es'], // English and Spanish
+		locales: ['en', 'es'], // Example: English, French, Spanish
 		localeConfigs: {
 			en: {
-				label: 'English'
+				htmlLang: 'en-US'
 			},
 			es: {
-				label: 'Español'
+				htmlLang: 'es-ES'
 			}
 		}
 	},
 
-	plugins: [
-		[
-			'@docusaurus/plugin-pwa',
-			{
-				offlineModeActivationStrategies: ['appInstalled', 'standalone', 'queryString'],
-				pwaHead: [
-					{
-						tagName: 'link',
-						rel: 'icon',
-						href: '/icons/android-chrome-192x192.png'
-					},
-					{
-						tagName: 'link',
-						rel: 'manifest',
-						href: '/manifest.webmanifest'
-					},
-					{
-						tagName: 'meta',
-						name: 'theme-color',
-						content: '#23529B'
-					}
-				]
-			}
-		]
-	],
+	plugins: [],
 
 	presets: [
 		[
@@ -190,6 +168,10 @@ const config: Config = {
 					href: 'https://github.com/matuteiglesias', // Replace with your GitHub
 					label: 'GitHub',
 					position: 'right'
+				},
+				{
+					type: 'localeDropdown',
+					position: 'right' // Or 'left'
 				}
 			]
 		},
