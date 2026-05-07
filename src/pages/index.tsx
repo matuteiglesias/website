@@ -5,6 +5,7 @@ import HomePageFeatures from '@site/src/components/Home/HomepageFeatures';
 import Layout from '@theme/Layout';
 import { useEffect } from 'react';
 import { SWRConfig } from 'swr';
+import { translate } from '@docusaurus/Translate';
 
 export default function Home(): JSX.Element {
 	const { siteConfig } = useDocusaurusContext();
@@ -21,10 +22,21 @@ export default function Home(): JSX.Element {
 		);
 	}, []);
 
+	// i18n-ready title and description (stable IDs for extraction)
+	const title = translate({
+		id: 'homepage.title',
+		message: `${siteConfig.title ?? 'Matías Iglesias'} – Data Scientist, AI Builder`
+	});
+
+	const description = translate({
+		id: 'homepage.description',
+		message: siteConfig.tagline ?? 'AI automation, data engineering, and strategic technology leadership'
+	});
+
 	return (
 		<>
 			<HeadTags />
-			<Layout title="Matías Iglesias – Data Scientist, AI Builder" description={siteConfig.tagline}>
+			<Layout title={title} description={description}>
 				<SWRConfig
 					value={{
 						fetcher: (resource: string, init: RequestInit) => fetch(resource, init).then((res) => res.json())
