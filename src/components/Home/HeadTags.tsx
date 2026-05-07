@@ -61,7 +61,7 @@ const HeadTags: FC = () => {
 
 			{/* Basic Metadata */}
 			<meta httpEquiv="Content-Type" content="text/html; charset=UTF-8" />
-			<meta name="description" content="MI — Data Scientist, AI Builder, Institutional Innovator." />
+			<meta name="description" content="MI — Data & AI systems engineer with a scientific background in economics and physics." />
 			<meta name="author" content="Matías Iglesias" />
 
 			{/* Canonical URL */}

@@ -22,13 +22,13 @@ const FeatureList: FeatureItem[] = [
 		description: (
 			<>
 				<Translate id="features.about.p1">
-					I’m Matías Iglesias — an independent data scientist, AI builder, and institutional innovator.
+					I’m Matías Iglesias — Data & AI systems engineer with a scientific background in economics and physics.
 				</Translate>
 				<br />
 				<br />
 				<Translate id="features.about.p2">
-					I specialize in developing intelligent tools and public knowledge systems that bridge the gap between technology and governance in
-					Latin America.
+					I build reliable systems for data, documents, models, and automation, from research-grade measurement to production-oriented AI
+					workflows.
 				</Translate>
 				<br />
 				<br />

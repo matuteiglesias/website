@@ -25,12 +25,12 @@ const HomePageHeader: FC = () => {
 
 				{/* One-liner Tagline */}
 				<h2 className={styles.tagline}>
-					<Translate id="homepage.tagline">Data Scientist, AI Builder, and Institutional Innovator</Translate>
+					<Translate id="homepage.tagline">Data & AI systems engineer</Translate>
 				</h2>
 
 				{/* Optional Description */}
 				<p className={styles.description}>
-					<Translate id="homepage.description2">Building intelligent tools and public knowledge systems.</Translate>
+					<Translate id="homepage.description2">I build reliable systems for data, documents, models, and automation.</Translate>
 				</p>
 
 				{/* Optional CTA Button */}

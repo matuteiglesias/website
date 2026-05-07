@@ -5,11 +5,10 @@ const isPwaEnabled = process.env.DISABLE_PWA !== '1';
 
 // Optional: If you're not using code samples, you can remove this line too.
 
-const Description =
-	'Matías Iglesias — Data Scientist, AI Builder, and Institutional Innovator. Building intelligent tools and public knowledge systems.';
+const Description = 'Matías Iglesias — Data & AI systems engineer. I build reliable systems for data, documents, models, and automation.';
 const BaseUrl = 'https://main.matuteiglesias.link';
 // const Email = 'youremail@domain.com'; // Optional — comment or add your email
-const Title = 'Matías Iglesias – Data Scientist';
+const Title = 'Matías Iglesias – Data & AI systems engineer';
 
 const Email = 'matuteiglesias@gmail.com';
 
