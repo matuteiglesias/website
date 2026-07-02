@@ -41,3 +41,18 @@
 	gap: 1rem;
 	margin-top: 1rem;
 }
+
+@media screen and (max-width: 480px) {
+	.heroBanner {
+		padding: 2rem 1rem;
+	}
+
+	.ctaGroup {
+		align-items: stretch;
+		flex-direction: column;
+	}
+
+	.ctaGroup a {
+		width: 100%;
+	}
+}

@@ -2860,7 +2860,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@docusaurus/theme-search-algolia@npm:3.8.1, @docusaurus/theme-search-algolia@npm:^3.7.0":
+"@docusaurus/theme-search-algolia@npm:3.8.1":
   version: 3.8.1
   resolution: "@docusaurus/theme-search-algolia@npm:3.8.1"
   dependencies:
@@ -15797,7 +15797,6 @@ __metadata:
     "@docusaurus/module-type-aliases": "npm:^3.7.0"
     "@docusaurus/plugin-pwa": "npm:^3.7.0"
     "@docusaurus/preset-classic": "npm:^3.7.0"
-    "@docusaurus/theme-search-algolia": "npm:^3.7.0"
     "@docusaurus/tsconfig": "npm:^3.9.2"
     "@eslint/eslintrc": "npm:^3.3.1"
     "@heroicons/react": "npm:^2.2.0"

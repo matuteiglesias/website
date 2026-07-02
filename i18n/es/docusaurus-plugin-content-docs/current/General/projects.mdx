@@ -1,0 +1,86 @@
+---
+title: Proyectos seleccionados
+sidebar_position: 5
+description: Tres cápsulas de prueba sobre el trabajo de Matías Iglesias en IA, datos y sistemas de datos públicos.
+tags: ['Proyectos', 'Ingeniería de IA', 'Sistemas de datos', 'Datos públicos']
+---
+
+import SimpleLink from '@site/src/components/Docs/SimpleLink';
+
+# Proyectos seleccionados
+
+Estas cápsulas de prueba resumen las tres áreas de proyecto que uso actualmente para mostrar ingeniería aplicada de IA,
+arquitectura de sistemas de datos y trabajo de datos públicos con rigor de investigación. La evidencia está marcada de
+forma conservadora: si un artefacto público todavía necesita sanitización o revisión, aparece como **Evidencia pendiente
+de revisión** en lugar de enlazarse.
+
+## 1. Media Monitor
+
+**Señal de rol:** Sistema operativo de automatización con IA/datos.
+
+**Brief:** Un pipeline de inteligencia con IA/datos que convierte entradas de noticias en briefs estructurados,
+borradores, artefactos de traspaso con esquemas válidos y salidas revisables por humanos.
+
+**Qué demuestra**
+
+- Puedo diseñar workflows inspeccionables de IA/datos a través de límites de adquisición, enriquecimiento, generación
+  editorial y publicación.
+- Puedo separar la salida de ejecución LLM de buses contractuales estables y superficies de traspaso humano.
+- Puedo exponer visibilidad de fallback y estado operativo en lugar de esconder supuestos frágiles en scripts.
+
+**Evidencia**
+
+- Flujo de arquitectura y límites de módulos.
+- Evidencia pendiente de revisión: superficie pública/demo sanitizada.
+- Evidencia pendiente de revisión: paquete de traspaso editorial de muestra o forma de `editorial_latest.json`.
+
+<SimpleLink href="/projects/media-monitor" linkName="Abrir cápsula de prueba de Media Monitor" />
+
+## 2. Knowledge / Data Contracts
+
+**Señal de rol:** Arquitectura de confiabilidad para pipelines de IA/conocimiento.
+
+**Brief:** Una arquitectura contractual para que los pipelines de IA y conocimiento sean inspeccionables, testeables,
+mantenibles y más seguros de extender a través de productores, buses versionados, manifiestos, índices de observabilidad
+y consumidores autorizados.
+
+**Qué demuestra**
+
+- Puedo diseñar capas de confiabilidad que mantienen pipelines multi-repo de IA/datos inspeccionables y seguros de
+  extender.
+- Puedo definir límites, contratos, observabilidad, versionado, gobernanza de integración y contención de fallas.
+- Puedo convertir la arquitectura de sistemas de conocimiento en reglas explícitas en lugar de acoplamiento oculto entre
+  carpetas y scripts.
+
+**Evidencia**
+
+- [Resumen técnico público](/docs/General/tech).
+- Evidencia pendiente de revisión: página de seams de integración.
+- Evidencia pendiente de revisión: contratos de run record e índice de observabilidad.
+
+<SimpleLink href="/projects/kb-contracts" linkName="Abrir cápsula de prueba de Knowledge / Data Contracts" />
+
+## 3. Public Data / Poverty & EPH
+
+**Señal de rol:** Producto de datos públicos con rigor de investigación.
+
+**Brief:** Un proyecto de análisis de datos públicos que combina microdatos de encuestas de hogares argentinas,
+modelado socioeconómico, mapas y salidas analíticas reproducibles.
+
+**Qué demuestra**
+
+- Puedo aplicar criterio analítico con rigor de investigación a datos socioeconómicos públicos, no solo mover artefactos
+  JSON.
+- Puedo construir caminos reproducibles desde microdatos de encuestas hasta indicadores, análisis geoespacial y salidas
+  orientadas a personas.
+- Puedo traducir investigación económica en mapas, gráficos, tablas y documentación inspeccionables para audiencias
+  públicas.
+
+**Evidencia**
+
+- [Repositorio: indice-pobreza-UBA](https://github.com/matuteiglesias/indice-pobreza-UBA).
+- [Resumen cívico/de datos públicos](/docs/General/civic).
+- Evidencia pendiente de revisión: capturas confiables, extractos metodológicos, notebooks de muestra y salidas de
+  gráficos/tablas.
+
+<SimpleLink href="/projects/public-data-poverty-eph" linkName="Abrir cápsula de prueba de Public Data / Poverty & EPH" />

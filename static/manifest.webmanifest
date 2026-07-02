@@ -1,185 +1,40 @@
 {
-	"$schema": "http://json.schemastore.org/web-manifest",
-	"name": "Sapphire Website",
-	"short_name": "Sapphire",
-	"start_url": "/",
-	"display": "minimal-ui",
-	"background_color": "#131516",
-	"lang": "en",
-	"scope": "/",
-	"categories": ["discord", "bot", "framework", "documentation", "guide", "sapphire"],
-	"description": "Sapphire is a next-gen Discord bot framework for developers of all skill levels to make the best JavaScript/TypeScript based bots possible.",
-	"orientation": "portrait-primary",
+	"name": "Matías Iglesias — Senior Data & AI Engineer",
+	"short_name": "Matías Iglesias",
+	"description": "Senior Data & AI Engineer building reliable systems for data, documents, retrieval, and automation.",
+	"lang": "en-US",
 	"dir": "ltr",
+	"start_url": "/",
+	"scope": "/",
+	"display": "standalone",
+	"orientation": "any",
 	"theme_color": "#23529B",
+	"background_color": "#0f172a",
+	"categories": ["portfolio", "productivity", "developer", "data"],
 	"icons": [
 		{
-			"src": "https://www.sapphirejs.dev/icons/android-chrome-36x36.png",
-			"sizes": "36x36",
-			"type": "image/png"
-		},
-		{
-			"src": "https://www.sapphirejs.dev/icons/android-chrome-48x48.png",
-			"sizes": "48x48",
-			"type": "image/png"
-		},
-		{
-			"src": "https://www.sapphirejs.dev/icons/android-chrome-72x72.png",
-			"sizes": "72x72",
-			"type": "image/png"
-		},
-		{
-			"src": "https://www.sapphirejs.dev/icons/android-chrome-96x96.png",
-			"sizes": "96x96",
-			"type": "image/png"
-		},
-		{
-			"src": "https://www.sapphirejs.dev/icons/android-chrome-144x144.png",
-			"sizes": "144x144",
-			"type": "image/png"
-		},
-		{
-			"src": "https://www.sapphirejs.dev/icons/android-chrome-192x192.png",
+			"src": "/icons/android-icon-192x192.png",
 			"sizes": "192x192",
 			"type": "image/png"
 		},
 		{
-			"src": "https://www.sapphirejs.dev/icons/android-chrome-256x256.png",
-			"sizes": "256x256",
-			"type": "image/png"
-		},
-		{
-			"src": "https://www.sapphirejs.dev/icons/android-chrome-384x384.png",
-			"sizes": "384x384",
-			"type": "image/png"
-		},
-		{
-			"src": "https://www.sapphirejs.dev/icons/android-chrome-512x512.png",
+			"src": "/icons/android-icon-512x512.png",
 			"sizes": "512x512",
 			"type": "image/png"
 		}
 	],
 	"shortcuts": [
 		{
-			"name": "Sapphire Website",
-			"short_name": "Homepage",
-			"description": "Go to Sapphire's website",
-			"url": "/",
-			"icons": [
-				{
-					"src": "https://www.sapphirejs.dev/icons/android-chrome-36x36.png",
-					"sizes": "36x36",
-					"type": "image/png"
-				},
-				{
-					"src": "https://www.sapphirejs.dev/icons/android-chrome-48x48.png",
-					"sizes": "48x48",
-					"type": "image/png"
-				},
-				{
-					"src": "https://www.sapphirejs.dev/icons/android-chrome-72x72.png",
-					"sizes": "72x72",
-					"type": "image/png"
-				},
-				{
-					"src": "https://www.sapphirejs.dev/icons/android-chrome-96x96.png",
-					"sizes": "96x96",
-					"type": "image/png"
-				},
-				{
-					"src": "https://www.sapphirejs.dev/icons/android-chrome-144x144.png",
-					"sizes": "144x144",
-					"type": "image/png"
-				},
-				{
-					"src": "https://www.sapphirejs.dev/icons/android-chrome-192x192.png",
-					"sizes": "192x192",
-					"type": "image/png"
-				},
-				{
-					"src": "https://www.sapphirejs.dev/icons/android-chrome-256x256.png",
-					"sizes": "256x256",
-					"type": "image/png"
-				},
-				{
-					"src": "https://www.sapphirejs.dev/icons/android-chrome-384x384.png",
-					"sizes": "384x384",
-					"type": "image/png"
-				},
-				{
-					"src": "https://www.sapphirejs.dev/icons/android-chrome-512x512.png",
-					"sizes": "512x512",
-					"type": "image/png"
-				}
-			]
-		}
-	],
-	"splash_pages": {
-		"name": "Sapphire",
-		"theme_color": "#23529B",
-		"background_color": "#131516",
-		"icons": [
-			{
-				"src": "https://www.sapphirejs.dev/icons/android-chrome-36x36.png",
-				"sizes": "36x36",
-				"type": "image/png"
-			},
-			{
-				"src": "https://www.sapphirejs.dev/icons/android-chrome-48x48.png",
-				"sizes": "48x48",
-				"type": "image/png"
-			},
-			{
-				"src": "https://www.sapphirejs.dev/icons/android-chrome-72x72.png",
-				"sizes": "72x72",
-				"type": "image/png"
-			},
-			{
-				"src": "https://www.sapphirejs.dev/icons/android-chrome-96x96.png",
-				"sizes": "96x96",
-				"type": "image/png"
-			},
-			{
-				"src": "https://www.sapphirejs.dev/icons/android-chrome-144x144.png",
-				"sizes": "144x144",
-				"type": "image/png"
-			},
-			{
-				"src": "https://www.sapphirejs.dev/icons/android-chrome-192x192.png",
-				"sizes": "192x192",
-				"type": "image/png"
-			},
-			{
-				"src": "https://www.sapphirejs.dev/icons/android-chrome-256x256.png",
-				"sizes": "256x256",
-				"type": "image/png"
-			},
-			{
-				"src": "https://www.sapphirejs.dev/icons/android-chrome-384x384.png",
-				"sizes": "384x384",
-				"type": "image/png"
-			},
-			{
-				"src": "https://www.sapphirejs.dev/icons/android-chrome-512x512.png",
-				"sizes": "512x512",
-				"type": "image/png"
-			}
-		]
-	},
-	"screenshots": [
-		{
-			"src": "https://www.sapphirejs.dev/icons/pwa-richinstall-screenshot-desktop.png",
-			"sizes": "1200x710",
-			"type": "image/png",
-			"form_factor": "wide",
-			"label": "Sapphire Webhooks Dashboard"
+			"name": "Selected Projects",
+			"short_name": "Projects",
+			"description": "View selected AI and data projects.",
+			"url": "/docs/General/projects"
 		},
 		{
-			"src": "https://www.sapphirejs.dev/icons/pwa-richinstall-screenshot-mobile.png",
-			"sizes": "480x640",
-			"type": "image/png",
-			"form_factor": "narrow",
-			"label": "Sapphire Webhooks Dashboard"
+			"name": "CV",
+			"short_name": "CV",
+			"description": "Read the professional CV.",
+			"url": "/docs/General/cv"
 		}
 	]
 }

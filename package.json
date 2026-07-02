@@ -1,8 +1,8 @@
 {
 	"name": "root-website",
 	"version": "1.0.0",
-	"description": "Website with the Sapphire guide, hosted on https://sapphirejs.dev",
-	"author": "@sapphire",
+	"description": "Personal/professional website for Matías Iglesias — Senior Data & AI Engineer.",
+	"author": "Matías Iglesias",
 	"license": "MIT",
 	"private": true,
 	"scripts": {
@@ -30,7 +30,6 @@
 		"@docusaurus/faster": "^3.7.0",
 		"@docusaurus/plugin-pwa": "^3.7.0",
 		"@docusaurus/preset-classic": "^3.7.0",
-		"@docusaurus/theme-search-algolia": "^3.7.0",
 		"@heroicons/react": "^2.2.0",
 		"@mdx-js/react": "^3.1.0",
 		"@sapphire/docusaurus-plugin-npm2yarn2pnpm": "2.0.2",
@@ -112,9 +111,9 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/sapphiredev/website.git"
+		"url": "git+https://github.com/matuteiglesias/website.git"
 	},
-	"homepage": "https://sapphirejs.dev",
+	"homepage": "https://main.matuteiglesias.link",
 	"commitlint": {
 		"extends": [
 			"@commitlint/config-conventional"

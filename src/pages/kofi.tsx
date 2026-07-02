@@ -1,8 +1,8 @@
 import { useEffect } from 'react';
 
-export default function Discord(): JSX.Element {
+export default function ContactRedirect(): JSX.Element {
 	useEffect(() => {
-		window.location.href = 'https://ko-fi.com/sapphirecommunity';
+		window.location.href = 'mailto:matuteiglesias@gmail.com';
 	}, []);
 
 	return <></>;

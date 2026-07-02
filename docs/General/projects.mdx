@@ -1,0 +1,78 @@
+---
+title: Selected Projects
+sidebar_position: 5
+description: Three proof capsules showing Matías Iglesias' AI, data, and public-data systems work.
+tags: ['Projects', 'AI Engineering', 'Data Systems', 'Public Data']
+---
+
+import SimpleLink from '@site/src/components/Docs/SimpleLink';
+
+# Selected Projects
+
+These proof capsules summarize the three project areas I currently use to show applied AI engineering, data-system
+architecture, and research-grade public-data work. Evidence is marked conservatively: if a public artifact still needs
+sanitization or review, it is listed as **Evidence pending review** instead of linked.
+
+## 1. Media Monitor
+
+**Role signal:** Operational AI/data automation system.
+
+**Brief:** An AI/data intelligence pipeline that turns raw news inputs into structured briefs, drafts, schema-valid
+handoff artifacts, and human-reviewable outputs.
+
+**What it proves**
+
+- I can design inspectable AI/data workflows across acquisition, enrichment, editorial generation, and publishing
+  boundaries.
+- I can separate LLM runtime output from stable contract buses and human handoff surfaces.
+- I can expose fallback visibility and operational status instead of hiding fragile assumptions in scripts.
+
+**Evidence**
+
+- Architecture flow and module boundaries.
+- Evidence pending review: sanitized public/demo snapshot surface.
+- Evidence pending review: sample editorial handoff packet or `editorial_latest.json` shape.
+
+<SimpleLink href="/projects/media-monitor" linkName="Open Media Monitor proof capsule" />
+
+## 2. Knowledge / Data Contracts
+
+**Role signal:** Reliability architecture for AI/knowledge pipelines.
+
+**Brief:** A contract architecture for making AI and knowledge pipelines inspectable, testable, maintainable, and safer
+to extend across producers, versioned buses, manifests, observability indexes, and sanctioned consumers.
+
+**What it proves**
+
+- I can design reliability layers that keep multi-repo AI/data pipelines inspectable and safe to extend.
+- I can define boundaries, contracts, observability, versioning, integration governance, and failure containment.
+- I can turn knowledge-system architecture into explicit rules rather than hidden coupling between folders and scripts.
+
+**Evidence**
+
+- [Public technical overview](/docs/General/tech).
+- Evidence pending review: integration seams page.
+- Evidence pending review: run record and observability index contracts.
+
+<SimpleLink href="/projects/kb-contracts" linkName="Open Knowledge / Data Contracts proof capsule" />
+
+## 3. Public Data / Poverty & EPH
+
+**Role signal:** Research-grade public data product.
+
+**Brief:** A public-data analysis project combining Argentine household survey microdata, socioeconomic modeling, maps,
+and reproducible analytical outputs.
+
+**What it proves**
+
+- I can apply research-grade analytical judgment to public socioeconomic data rather than only moving JSON artifacts.
+- I can build reproducible paths from survey microdata to indicators, geospatial analysis, and human-facing outputs.
+- I can translate economic research into inspectable maps, charts, tables, and documentation for public audiences.
+
+**Evidence**
+
+- [Repository: indice-pobreza-UBA](https://github.com/matuteiglesias/indice-pobreza-UBA).
+- [Civic/public-data overview](/docs/General/civic).
+- Evidence pending review: reliable screenshots, methodology excerpts, sample notebooks, and chart/table outputs.
+
+<SimpleLink href="/projects/public-data-poverty-eph" linkName="Open Public Data / Poverty & EPH proof capsule" />

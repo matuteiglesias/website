@@ -1,8 +1,8 @@
 import { useEffect } from 'react';
 
-export default function Discord(): JSX.Element {
+export default function GitHubRedirect(): JSX.Element {
 	useEffect(() => {
-		window.location.href = 'https://github.com/sapphiredev';
+		window.location.href = 'https://github.com/matuteiglesias';
 	}, []);
 
 	return <></>;

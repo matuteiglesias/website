@@ -62,10 +62,18 @@ const HomePageFeatures: FC = () => (
 						</Translate>
 					</p>
 					<ul>
-						<li>Python automation</li>
-						<li>data contracts and validation</li>
-						<li>publishing/deploy workflow</li>
-						<li>operational handoff design</li>
+						<li>
+							<Translate id="features.projects.media.bullet1">Python automation</Translate>
+						</li>
+						<li>
+							<Translate id="features.projects.media.bullet2">data contracts and validation</Translate>
+						</li>
+						<li>
+							<Translate id="features.projects.media.bullet3">publishing/deploy workflow</Translate>
+						</li>
+						<li>
+							<Translate id="features.projects.media.bullet4">operational handoff design</Translate>
+						</li>
 					</ul>
 					<Link to="/projects/media-monitor">
 						<Translate id="features.projects.media.link">View proof capsule</Translate>
@@ -80,10 +88,18 @@ const HomePageFeatures: FC = () => (
 						</Translate>
 					</p>
 					<ul>
-						<li>schemas</li>
-						<li>run records</li>
-						<li>integration seams</li>
-						<li>smoke tests</li>
+						<li>
+							<Translate id="features.projects.contracts.bullet1">schemas</Translate>
+						</li>
+						<li>
+							<Translate id="features.projects.contracts.bullet2">run records</Translate>
+						</li>
+						<li>
+							<Translate id="features.projects.contracts.bullet3">integration seams</Translate>
+						</li>
+						<li>
+							<Translate id="features.projects.contracts.bullet4">smoke tests</Translate>
+						</li>
 					</ul>
 					<Link to="/projects/kb-contracts">
 						<Translate id="features.projects.contracts.link">View proof capsule</Translate>
@@ -98,10 +114,18 @@ const HomePageFeatures: FC = () => (
 						</Translate>
 					</p>
 					<ul>
-						<li>Python data processing</li>
-						<li>public microdata</li>
-						<li>reproducible research workflows</li>
-						<li>analytical reporting</li>
+						<li>
+							<Translate id="features.projects.publicData.bullet1">Python data processing</Translate>
+						</li>
+						<li>
+							<Translate id="features.projects.publicData.bullet2">public microdata</Translate>
+						</li>
+						<li>
+							<Translate id="features.projects.publicData.bullet3">reproducible research workflows</Translate>
+						</li>
+						<li>
+							<Translate id="features.projects.publicData.bullet4">analytical reporting</Translate>
+						</li>
 					</ul>
 					<Link to="/projects/public-data-poverty-eph">
 						<Translate id="features.projects.publicData.link">View proof capsule</Translate>

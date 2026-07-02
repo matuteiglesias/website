@@ -1,0 +1,113 @@
+{
+	"homepage.title": {
+		"message": "Matías Iglesias — Senior Data & AI Engineer"
+	},
+	"homepage.description": {
+		"message": "Senior Data & AI Engineer construyendo sistemas confiables para datos, documentos, recuperación de información y automatización."
+	},
+	"homepage.tagline": {
+		"message": "Sistemas confiables para datos, documentos, recuperación de información y automatización."
+	},
+	"homepage.description2": {
+		"message": "Construyo sistemas en Python/SQL que convierten información desordenada en infraestructura usable: pipelines de datos, workflows de procesamiento documental, sistemas de recuperación, dashboards y herramientas de automatización asistidas por IA."
+	},
+	"homepage.intro.background": {
+		"message": "Mi trabajo combina ingeniería de software/datos con formación científica en economía y física. Soy más fuerte en problemas donde datos, software, criterio analítico y utilidad operativa tienen que encontrarse."
+	},
+	"homepage.cta.projects": {
+		"message": "Ver proyectos seleccionados"
+	},
+	"homepage.cta.cv": {
+		"message": "Ver CV"
+	},
+	"homepage.secondary.journal": {
+		"message": "Journal técnico / build log"
+	},
+	"homepage.secondary.thesis": {
+		"message": "Tesis / investigación"
+	},
+	"features.build.title": {
+		"message": "Qué construyo"
+	},
+	"features.build.li1": {
+		"message": "Pipelines de datos y datasets estructurados"
+	},
+	"features.build.li2": {
+		"message": "Workflows RAG y de procesamiento documental"
+	},
+	"features.build.li3": {
+		"message": "Capas de automatización para trabajo operativo repetitivo"
+	},
+	"features.build.li4": {
+		"message": "Dashboards y superficies de decisión"
+	},
+	"features.build.li5": {
+		"message": "Validación, contratos y workflows reproducibles"
+	},
+	"features.links.title": {
+		"message": "Links de contexto"
+	},
+	"features.links.journal": {
+		"message": "Diario de desarrollo / bitácora de construcción"
+	},
+	"features.links.thesis": {
+		"message": "Tesis doctoral y trayectoria de investigación"
+	},
+	"features.projects.title": {
+		"message": "Proyectos seleccionados"
+	},
+	"features.projects.media.desc": {
+		"message": "Un sistema de automatización de IA/datos que convierte insumos de noticias en briefs estructurados, borradores y salidas revisables por humanos."
+	},
+	"features.projects.media.bullet1": {
+		"message": "automatización en Python"
+	},
+	"features.projects.media.bullet2": {
+		"message": "contratos de datos y validación"
+	},
+	"features.projects.media.bullet3": {
+		"message": "workflow de publicación/despliegue"
+	},
+	"features.projects.media.bullet4": {
+		"message": "diseño de transferencia operativa"
+	},
+	"features.projects.media.link": {
+		"message": "Ver cápsula de prueba"
+	},
+	"features.projects.contracts.desc": {
+		"message": "Una capa de contratos para hacer que los workflows de IA y conocimiento sean inspeccionables, testeables y mantenibles entre repositorios."
+	},
+	"features.projects.contracts.bullet1": {
+		"message": "esquemas"
+	},
+	"features.projects.contracts.bullet2": {
+		"message": "registros de ejecución"
+	},
+	"features.projects.contracts.bullet3": {
+		"message": "puntos de integración"
+	},
+	"features.projects.contracts.bullet4": {
+		"message": "smoke tests"
+	},
+	"features.projects.contracts.link": {
+		"message": "Ver cápsula de prueba"
+	},
+	"features.projects.publicData.desc": {
+		"message": "Sistemas aplicados de economía y datos públicos que combinan datos de encuestas, análisis reproducible y salidas orientadas a decisiones."
+	},
+	"features.projects.publicData.bullet1": {
+		"message": "procesamiento de datos en Python"
+	},
+	"features.projects.publicData.bullet2": {
+		"message": "microdatos públicos"
+	},
+	"features.projects.publicData.bullet3": {
+		"message": "workflows de investigación reproducible"
+	},
+	"features.projects.publicData.bullet4": {
+		"message": "reportes analíticos"
+	},
+	"features.projects.publicData.link": {
+		"message": "Ver cápsula de prueba"
+	}
+}
