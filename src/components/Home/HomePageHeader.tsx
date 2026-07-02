@@ -1,3 +1,4 @@
+import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import * as _clsxModule from 'clsx';
 
@@ -17,24 +18,47 @@ const HomePageHeader: FC = () => {
 	return (
 		<header className={clsx('hero', styles.heroBanner)}>
 			<div className="container">
-				{/* Optional Logo */}
-				{/* <img src="/icons/matias-logo.svg" alt="Matías Logo" className={styles.logo} /> */}
-
-				{/* Main Title */}
 				<h1 className="hero__title">{siteConfig.title}</h1>
 
-				{/* One-liner Tagline */}
 				<h2 className={styles.tagline}>
-					<Translate id="homepage.tagline">Data & AI systems engineer</Translate>
+					<Translate id="homepage.tagline">Reliable systems for data, documents, retrieval, and automation.</Translate>
 				</h2>
 
-				{/* Optional Description */}
 				<p className={styles.description}>
-					<Translate id="homepage.description2">I build reliable systems for data, documents, models, and automation.</Translate>
+					<Translate id="homepage.description2">
+						I build Python/SQL systems that turn messy information into usable infrastructure: data pipelines, document-processing
+						workflows, retrieval systems, dashboards, and AI-assisted automation tools.
+					</Translate>
 				</p>
 
-				{/* Optional CTA Button */}
-				{/* <a href="/projects" className={styles.ctaButton}>View My Projects</a> */}
+				<p className={styles.description}>
+					<Translate id="homepage.intro.background">
+						My background combines software/data engineering with scientific training in economics and physics. I’m strongest where data,
+						software, research judgment, and operational usefulness need to meet.
+					</Translate>
+				</p>
+
+				<div className={styles.ctaGroup} aria-label="Primary links">
+					<Link className="button button--primary button--lg" to="https://main.matuteiglesias.link/#selected-projects">
+						<Translate id="homepage.cta.projects">View selected projects</Translate>
+					</Link>
+					<Link className="button button--secondary button--lg" to="/docs/General/cv">
+						<Translate id="homepage.cta.cv">Read CV</Translate>
+					</Link>
+					<Link className="button button--secondary button--lg" to="https://github.com/matuteiglesias">
+						GitHub
+					</Link>
+				</div>
+
+				<div className={styles.secondaryLinks} aria-label="Secondary links">
+					<Link to="https://www.linkedin.com/in/matiasiglesias/">LinkedIn</Link>
+					<Link to="https://journal.matuteiglesias.link">
+						<Translate id="homepage.secondary.journal">Developer Journal</Translate>
+					</Link>
+					<Link to="https://thesis.matuteiglesias.link">
+						<Translate id="homepage.secondary.thesis">Thesis / research</Translate>
+					</Link>
+				</div>
 			</div>
 		</header>
 	);

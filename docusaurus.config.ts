@@ -5,10 +5,11 @@ const isPwaEnabled = process.env.DISABLE_PWA !== '1';
 
 // Optional: If you're not using code samples, you can remove this line too.
 
-const Description = 'Matías Iglesias — Data & AI systems engineer. I build reliable systems for data, documents, models, and automation.';
+const Description =
+	'Senior Data & AI Engineer building reliable systems for data, documents, retrieval, and automation using Python, SQL, LLM APIs, RAG, BigQuery/GCP, and workflow automation.';
 const BaseUrl = 'https://main.matuteiglesias.link';
 // const Email = 'youremail@domain.com'; // Optional — comment or add your email
-const Title = 'Matías Iglesias – Data & AI systems engineer';
+const Title = 'Matías Iglesias — Senior Data & AI Engineer';
 
 const Email = 'matuteiglesias@gmail.com';
 
@@ -26,14 +27,14 @@ const baseTypedocOptions = {
 };
 
 const config: Config = {
-	title: 'Matías Iglesias – Data Scientist',
+	title: Title,
 	url: BaseUrl,
 	baseUrl: '/',
 	onBrokenLinks: 'warn',
 	onBrokenMarkdownLinks: 'warn',
 	onDuplicateRoutes: 'warn',
 	favicon: 'favicon.ico',
-	tagline: Description,
+	tagline: 'Python, SQL, RAG, automation, and reliable data systems',
 	organizationName: 'matuteiglesias', // your GitHub username or any organization you prefer
 	projectName: 'website', // name of the repo or just 'website'
 	themes: [],
@@ -99,7 +100,7 @@ const config: Config = {
 			{ name: 'googlebot', content: 'index,follow' },
 			{ name: 'HandheldFriendly', content: 'True' },
 			{ name: 'identifier-URL', content: BaseUrl },
-			{ name: 'keywords', content: 'discord, bot, framework, documentation, guide, sapphire' },
+			{ name: 'keywords', content: 'Python, SQL, RAG, automation, data engineering, AI engineering, document processing, BigQuery, GCP' },
 			{ name: 'msapplication-config', content: '/browserconfig.xml' },
 			{ name: 'msapplication-TileColor', content: '#23529B' },
 			{ name: 'msapplication-TileImage', content: '/icons/mstile-144x144.png' },
@@ -109,7 +110,7 @@ const config: Config = {
 			{ name: 'revisit-after', content: '7 days' },
 			{ name: 'robots', content: 'archive,follow,imageindex,index,odp,snippet,translate' },
 			{ name: 'shortlink', content: BaseUrl },
-			{ name: 'subject', content: 'Documentation website for Sapphire Projects' },
+			{ name: 'subject', content: 'Personal website for Matías Iglesias, Senior Data & AI Engineer' },
 			{ name: 'summary', content: Description },
 			{ name: 'target', content: 'all' },
 			{ name: 'theme-color', content: '#23529B' },
@@ -143,19 +144,8 @@ const config: Config = {
 					activeBaseRegex: '^/$'
 				},
 				{
-					to: 'docs/General/Welcome',
-					position: 'left',
-					label: 'About',
-					activeBaseRegex: '^/docs/(General|Documentation)/.+$'
-				},
-				{
-					to: 'docs/General/tech',
-					label: 'Sr Developer',
-					position: 'left'
-				},
-				{
-					to: 'docs/General/civic',
-					label: 'Civic Data Infra',
+					to: 'projects/media-monitor',
+					label: 'Projects',
 					position: 'left'
 				},
 				{
@@ -164,8 +154,13 @@ const config: Config = {
 					position: 'left'
 				},
 				{
-					href: 'https://github.com/matuteiglesias', // Replace with your GitHub
+					href: 'https://github.com/matuteiglesias',
 					label: 'GitHub',
+					position: 'right'
+				},
+				{
+					href: 'mailto:matuteiglesias@gmail.com',
+					label: 'Contact',
 					position: 'right'
 				},
 				{
