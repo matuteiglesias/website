@@ -1,0 +1,116 @@
+.page {
+	padding: 3rem 0 4rem;
+}
+
+.hero {
+	max-width: 58rem;
+	margin-bottom: 2.5rem;
+}
+
+.eyebrow {
+	margin-bottom: 0.5rem;
+	color: var(--ifm-color-primary);
+	font-weight: 700;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+}
+
+.subtitle {
+	font-size: 1.35rem;
+	line-height: 1.6;
+	color: var(--ifm-color-emphasis-800);
+}
+
+.roleSignal {
+	display: inline-block;
+	border: 1px solid var(--ifm-color-primary);
+	border-radius: 999px;
+	padding: 0.35rem 0.75rem;
+	font-weight: 700;
+	color: var(--ifm-color-primary);
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: minmax(0, 2fr) minmax(18rem, 1fr);
+	gap: 1.5rem;
+	align-items: start;
+}
+
+.card,
+.flowCard {
+	border: 1px solid var(--ifm-color-emphasis-300);
+	border-radius: 12px;
+	padding: 1.25rem;
+	background: var(--ifm-card-background-color);
+}
+
+.card + .card {
+	margin-top: 1rem;
+}
+
+.flowList {
+	display: grid;
+	gap: 0.75rem;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.flowList li {
+	border-left: 3px solid var(--ifm-color-primary);
+	padding-left: 0.75rem;
+}
+
+.metaList,
+.evidenceList {
+	padding-left: 1.25rem;
+}
+
+.evidenceList li + li {
+	margin-top: 0.5rem;
+}
+
+.statusBadge {
+	display: inline-block;
+	margin-left: 0.4rem;
+	border-radius: 999px;
+	padding: 0.1rem 0.45rem;
+	font-size: 0.75rem;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.ready {
+	background: #d7f7df;
+	color: #0b5f22;
+}
+
+.missing {
+	background: #f8d7da;
+	color: #842029;
+}
+
+.needsReview {
+	background: #fff3cd;
+	color: #664d03;
+}
+
+.status {
+	border-left: 4px solid var(--ifm-color-primary);
+	padding: 1rem 1.25rem;
+	background: var(--ifm-color-emphasis-100);
+}
+
+.links {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.75rem;
+	margin-top: 1rem;
+}
+
+@media screen and (max-width: 996px) {
+	.grid {
+		grid-template-columns: 1fr;
+	}
+}

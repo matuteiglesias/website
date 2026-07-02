@@ -1,129 +1,115 @@
 import Link from '@docusaurus/Link';
 import type { FC } from 'react';
-import Feature from './Features/Feature';
-import StatisticsFeature from './Features/StatisticsFeature';
-import type { FeatureItem } from './Features/Types';
 import styles from './HomepageFeatures.module.css';
 
-import Translate, { translate } from '@docusaurus/Translate';
-
-/**
- * Note:
- * - Use translate() when the `title` must be a plain string.
- * - Use <Translate> when you need JSX or paragraphs inside the description.
- */
-
-const FeatureList: FeatureItem[] = [
-	{
-		title: translate({
-			id: 'features.about.title',
-			message: 'About Me'
-		}),
-		description: (
-			<>
-				<Translate id="features.about.p1">
-					I’m Matías Iglesias — Data & AI systems engineer with a scientific background in economics and physics.
-				</Translate>
-				<br />
-				<br />
-				<Translate id="features.about.p2">
-					I build reliable systems for data, documents, models, and automation, from research-grade measurement to production-oriented AI
-					workflows.
-				</Translate>
-				<br />
-				<br />
-				<Translate id="features.about.p3">Let’s explore the systems I’ve built and the ideas that drive my work.</Translate>
-			</>
-		)
-	},
-	{
-		title: translate({
-			id: 'features.why.title',
-			message: 'What Makes Me Different'
-		}),
-		description: (
-			<>
-				<ul>
-					<li>
-						<Translate id="features.why.li1">AI + Data Strategy</Translate>
-					</li>
-					<li>
-						<Translate id="features.why.li2">Automation Architect</Translate>
-					</li>
-					<li>
-						<Translate id="features.why.li3">Technical Depth + Vision</Translate>
-					</li>
-					<li>
-						<Translate id="features.why.li4">Institutional Experience</Translate>
-					</li>
-					<li>
-						<Translate id="features.why.li5">Global Perspective</Translate>
-					</li>
-				</ul>
-
-				<p>
-					<a href="https://journal.matuteiglesias.link" target="_blank" rel="noopener noreferrer">
-						<Translate id="features.why.journal">📓 Explore my daily work on my Developer Journal</Translate>
-					</a>
-				</p>
-
-				<p>
-					<a href="https://thesis.matuteiglesias.link" target="_blank" rel="noopener noreferrer">
-						<Translate id="features.why.thesisLink">Explore my groundbreaking PhD thesis on Aggregation</Translate>
-					</a>{' '}
-					—{' '}
-					<Translate id="features.why.thesisDesc">
-						a state-of-the-art contribution in computational economics, and a robust framework for tracking micro-to-macro relationships.
-					</Translate>
-				</p>
-			</>
-		)
-	},
-	{
-		title: 'Connect with Me',
-		description: (
-			<>
-				You can also find me here:
-				<br />
-				<br />
-				<ul>
-					<li>
-						<Link to="https://www.linkedin.com/in/matiasiglesias/">LinkedIn</Link>
-					</li>
-					<li>
-						<Link to="https://github.com/matuteiglesias">GitHub</Link>
-					</li>
-					<li>
-						<Link to="https://growthlab.hks.harvard.edu/people/matias-iglesias">Harvard Kennedy School</Link>
-					</li>
-					<li>
-						<Link to="https://www.researchgate.net/profile/Matias-Iglesias-9">ResearchGate</Link>
-					</li>
-					<li>
-						<Link to="https://ideas.repec.org/cgi-bin/htsearch2?q=++++Matias+Nehuen+Iglesias">RePEc</Link>
-					</li>
-					<li>
-						<Link to="https://dta.santannapisa.it/t/etd-11252020-152446/">Sant&apos;Anna Pisa Thesis</Link>
-					</li>
-					<li>
-						<Link to="https://www.rcai.it/matias-iglesias/">RCAI Italy</Link>
-					</li>
-				</ul>
-			</>
-		)
-	}
-];
+import Translate from '@docusaurus/Translate';
 
 const HomePageFeatures: FC = () => (
-	<section className={styles.features}>
-		<div className="container">
-			<div className="row">
-				{FeatureList.map((props, idx) => (
-					<Feature key={idx} {...props} />
-				))}
+	<main className={styles.features}>
+		<section className="container">
+			<div className={styles.sectionGrid}>
+				<div>
+					<h2>
+						<Translate id="features.build.title">What I build</Translate>
+					</h2>
+					<ul className={styles.checkList}>
+						<li>
+							<Translate id="features.build.li1">Data pipelines and structured datasets</Translate>
+						</li>
+						<li>
+							<Translate id="features.build.li2">RAG and document-processing workflows</Translate>
+						</li>
+						<li>
+							<Translate id="features.build.li3">Automation layers for repeated operational work</Translate>
+						</li>
+						<li>
+							<Translate id="features.build.li4">Dashboards and decision surfaces</Translate>
+						</li>
+						<li>
+							<Translate id="features.build.li5">Validation, contracts, and reproducible workflows</Translate>
+						</li>
+					</ul>
+				</div>
+
+				<div>
+					<h2>
+						<Translate id="features.links.title">Background links</Translate>
+					</h2>
+					<p>
+						<Link to="https://journal.matuteiglesias.link">
+							<Translate id="features.links.journal">Developer journal / build log</Translate>
+						</Link>
+					</p>
+					<p>
+						<Link to="https://thesis.matuteiglesias.link">
+							<Translate id="features.links.thesis">PhD thesis and research background</Translate>
+						</Link>
+					</p>
+				</div>
 			</div>
-		</div>
-	</section>
+		</section>
+
+		<section className="container">
+			<h2 id="selected-projects">
+				<Translate id="features.projects.title">Selected projects</Translate>
+			</h2>
+			<div className={styles.projectGrid}>
+				<article className={styles.projectCard}>
+					<h3>Media Monitor</h3>
+					<p>
+						<Translate id="features.projects.media.desc">
+							An AI/data automation system that turns raw news inputs into structured briefs, drafts, and human-reviewable outputs.
+						</Translate>
+					</p>
+					<ul>
+						<li>Python automation</li>
+						<li>data contracts and validation</li>
+						<li>publishing/deploy workflow</li>
+						<li>operational handoff design</li>
+					</ul>
+					<Link to="/projects/media-monitor">
+						<Translate id="features.projects.media.link">View proof capsule</Translate>
+					</Link>
+				</article>
+
+				<article className={styles.projectCard}>
+					<h3>Knowledge / Data Contracts</h3>
+					<p>
+						<Translate id="features.projects.contracts.desc">
+							A contracts layer for making AI and knowledge workflows inspectable, testable, and maintainable across repositories.
+						</Translate>
+					</p>
+					<ul>
+						<li>schemas</li>
+						<li>run records</li>
+						<li>integration seams</li>
+						<li>smoke tests</li>
+					</ul>
+					<Link to="/projects/kb-contracts">
+						<Translate id="features.projects.contracts.link">View proof capsule</Translate>
+					</Link>
+				</article>
+
+				<article className={styles.projectCard}>
+					<h3>Public Data / Poverty &amp; EPH Work</h3>
+					<p>
+						<Translate id="features.projects.publicData.desc">
+							Applied economic and public-data systems combining survey data, reproducible analysis, and decision-oriented outputs.
+						</Translate>
+					</p>
+					<ul>
+						<li>Python data processing</li>
+						<li>public microdata</li>
+						<li>reproducible research workflows</li>
+						<li>analytical reporting</li>
+					</ul>
+					<Link to="/projects/public-data-poverty-eph">
+						<Translate id="features.projects.publicData.link">View proof capsule</Translate>
+					</Link>
+				</article>
+			</div>
+		</section>
+	</main>
 );
 
 export default HomePageFeatures;

@@ -25,12 +25,12 @@ export default function Home(): JSX.Element {
 	// i18n-ready title and description (stable IDs for extraction)
 	const title = translate({
 		id: 'homepage.title',
-		message: `${siteConfig.title ?? 'Matías Iglesias'} – Data Scientist, AI Builder`
+		message: `${siteConfig.title ?? 'Matías Iglesias — Senior Data & AI Engineer'}`
 	});
 
 	const description = translate({
 		id: 'homepage.description',
-		message: siteConfig.tagline ?? 'AI automation, data engineering, and strategic technology leadership'
+		message: 'Senior Data & AI Engineer building reliable systems for data, documents, retrieval, and automation.'
 	});
 
 	return (
@@ -43,9 +43,7 @@ export default function Home(): JSX.Element {
 					}}
 				>
 					<HomePageHeader />
-					<main>
-						<HomePageFeatures />
-					</main>
+					<HomePageFeatures />
 				</SWRConfig>
 			</Layout>
 		</>

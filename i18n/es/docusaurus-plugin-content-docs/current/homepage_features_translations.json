@@ -1,6 +1,13 @@
 {
-	"homepage.tagline": "Científico de datos, desarrollador de IA e innovador institucional",
-	"homepage.title": { "message": "Matías Iglesias – Científico de Datos, Constructor de IA" },
-	"homepage.description": { "message": "Automatización de IA, ingeniería de datos y liderazgo tecnológico estratégico" },
-	"homepage.description2": "Desarrollo de herramientas inteligentes y sistemas de conocimiento público."
+	"homepage.tagline": "Sistemas confiables para datos, documentos, recuperación de información y automatización.",
+	"homepage.title": { "message": "Matías Iglesias — Senior Data & AI Engineer" },
+	"homepage.description": {
+		"message": "Senior Data & AI Engineer construyendo sistemas confiables para datos, documentos, recuperación de información y automatización."
+	},
+	"homepage.description2": "Construyo sistemas en Python/SQL que convierten información desordenada en infraestructura usable: pipelines de datos, workflows de procesamiento documental, sistemas de recuperación, dashboards y herramientas de automatización asistidas por IA.",
+	"homepage.intro.background": "Mi trabajo combina ingeniería de software/datos con formación científica en economía y física. Soy más fuerte en problemas donde datos, software, criterio analítico y utilidad operativa tienen que encontrarse.",
+	"homepage.cta.projects": "Ver proyectos seleccionados",
+	"homepage.cta.cv": "Leer CV",
+	"homepage.secondary.journal": "Developer Journal",
+	"homepage.secondary.thesis": "Tesis / investigación"
 }

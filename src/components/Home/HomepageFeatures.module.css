@@ -1,6 +1,46 @@
 .features {
 	display: flex;
-	align-items: center;
-	padding: 2rem 0;
+	flex-direction: column;
+	gap: 3rem;
+	padding: 3rem 0;
 	width: 100%;
+}
+
+.sectionGrid {
+	display: grid;
+	grid-template-columns: minmax(0, 2fr) minmax(16rem, 1fr);
+	gap: 2rem;
+}
+
+.checkList {
+	font-size: 1.05rem;
+	line-height: 1.8;
+}
+
+.projectGrid {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: 1.25rem;
+}
+
+.projectCard {
+	border: 1px solid var(--ifm-color-emphasis-300);
+	border-radius: 12px;
+	padding: 1.25rem;
+	background: var(--ifm-card-background-color);
+}
+
+.projectCard h3 {
+	margin-top: 0;
+}
+
+.projectCard ul {
+	padding-left: 1.25rem;
+}
+
+@media screen and (max-width: 966px) {
+	.sectionGrid,
+	.projectGrid {
+		grid-template-columns: 1fr;
+	}
 }
