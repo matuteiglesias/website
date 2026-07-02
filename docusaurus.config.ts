@@ -92,19 +92,23 @@ const config: Config = {
 			{ name: 'apple-mobile-web-app-title', content: Title },
 			{ name: 'application-name', content: Title },
 			{ name: 'audience', content: 'all' },
-			{ name: 'author', content: `Sapphire Community, ${Email}` },
+			{ name: 'author', content: `Matías Iglesias, ${Email}` },
 			{ name: 'coverage', content: 'Worldwide' },
 			{ name: 'description', content: Description },
-			{ name: 'designer', content: `Sapphire Community, ${Email}` },
+			{ name: 'designer', content: `Matías Iglesias, ${Email}` },
 			{ name: 'distribution', content: 'Global' },
 			{ name: 'googlebot', content: 'index,follow' },
 			{ name: 'HandheldFriendly', content: 'True' },
 			{ name: 'identifier-URL', content: BaseUrl },
-			{ name: 'keywords', content: 'Python, SQL, RAG, automation, data engineering, AI engineering, document processing, BigQuery, GCP' },
+			{
+				name: 'keywords',
+				content:
+					'Senior Data Engineer, AI Engineer, Python, SQL, RAG, automation, data engineering, LLM APIs, document intelligence, BigQuery, GCP'
+			},
 			{ name: 'msapplication-config', content: '/browserconfig.xml' },
 			{ name: 'msapplication-TileColor', content: '#23529B' },
 			{ name: 'msapplication-TileImage', content: '/icons/mstile-144x144.png' },
-			{ name: 'owner', content: `Sapphire Community, ${Email}` },
+			{ name: 'owner', content: `Matías Iglesias, ${Email}` },
 			{ name: 'rating', content: 'safe for kids' },
 			{ name: 'reply-to', content: Email },
 			{ name: 'revisit-after', content: '7 days' },
@@ -144,12 +148,12 @@ const config: Config = {
 					activeBaseRegex: '^/$'
 				},
 				{
-					to: 'projects/media-monitor',
+					to: '/docs/General/projects',
 					label: 'Projects',
 					position: 'left'
 				},
 				{
-					to: 'docs/General/cv',
+					to: '/docs/General/cv',
 					label: 'CV',
 					position: 'left'
 				},
@@ -184,13 +188,9 @@ const config: Config = {
 			additionalLanguages: ['powershell', 'batch'],
 			theme: themes.github,
 			darkTheme: themes.vsDark
-		},
-		algolia: {
-			appId: 'WWVT30WAIZ',
-			apiKey: 'c1639f17b4ed5183d032d2e7f22ec62f',
-			indexName: 'sapphirejs',
-			contextualSearch: false
 		}
+		// Search is intentionally hidden until a working Algolia DocSearch index
+		// exists for this site.
 	}
 };
 

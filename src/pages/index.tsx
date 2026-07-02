@@ -30,7 +30,7 @@ export default function Home(): JSX.Element {
 
 	const description = translate({
 		id: 'homepage.description',
-		message: 'Senior Data & AI Engineer building reliable systems for data, documents, retrieval, and automation.'
+		message: 'Senior Data & AI Engineer building production-minded data platforms, document intelligence, retrieval systems, and AI automation.'
 	});
 
 	return (

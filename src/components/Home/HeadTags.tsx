@@ -61,14 +61,16 @@ const HeadTags: FC = () => {
 
 			{/* Basic Metadata */}
 			<meta httpEquiv="Content-Type" content="text/html; charset=UTF-8" />
-			<meta name="description" content="MI — Data & AI systems engineer with a scientific background in economics and physics." />
+			<meta
+				name="description"
+				content="Senior Data & AI Engineer building reliable systems for data, documents, retrieval, and automation using Python, SQL, LLM APIs, RAG, BigQuery/GCP, and workflow automation."
+			/>
 			<meta name="author" content="Matías Iglesias" />
 
 			{/* Canonical URL */}
 			<link rel="canonical" href="https://main.matuteiglesias.link" />
 			<link rel="alternate" hrefLang="en" href="https://main.matuteiglesias.link/" />
 			<link rel="alternate" hrefLang="es" href="https://main.matuteiglesias.link/es/" />
-			<link rel="alternate" hrefLang="pt" href="https://main.matuteiglesias.link/pt/" />
 
 			{/* Preconnect and Fonts */}
 			<link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -96,15 +98,21 @@ const HeadTags: FC = () => {
 			<meta name="theme-color" content="#ffffff" />
 
 			{/* Optional SEO Enhancements */}
-			<meta property="og:title" content="Matías Iglesias — Data Scientist, AI Builder" />
-			<meta property="og:description" content="Building intelligent tools and public knowledge systems in Latin America." />
+			<meta property="og:title" content="Matías Iglesias — Senior Data & AI Engineer" />
+			<meta
+				property="og:description"
+				content="Senior Data & AI Engineer building reliable systems for data, documents, retrieval, and automation."
+			/>
 			<meta property="og:url" content="https://main.matuteiglesias.link" />
 			<meta property="og:type" content="website" />
 			<meta property="og:image" content="/icons/android-icon-192x192.png" />
 
 			<meta name="twitter:card" content="summary_large_image" />
-			<meta name="twitter:title" content="Matías Iglesias — Data Scientist, AI Builder" />
-			<meta name="twitter:description" content="Building intelligent tools and public knowledge systems in Latin America." />
+			<meta name="twitter:title" content="Matías Iglesias — Senior Data & AI Engineer" />
+			<meta
+				name="twitter:description"
+				content="Senior Data & AI Engineer building reliable systems for data, documents, retrieval, and automation."
+			/>
 			<meta name="twitter:image" content="/icons/android-icon-192x192.png" />
 		</Head>
 	);

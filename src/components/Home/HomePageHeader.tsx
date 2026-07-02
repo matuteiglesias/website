@@ -1,5 +1,4 @@
 import Link from '@docusaurus/Link';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import * as _clsxModule from 'clsx';
 
 import { memo, type FC } from 'react';
@@ -13,12 +12,12 @@ const clsx: (...parts: any[]) => string =
 			: (...parts: any[]) => parts.filter(Boolean).join(' ');
 
 const HomePageHeader: FC = () => {
-	const { siteConfig } = useDocusaurusContext();
-
 	return (
 		<header className={clsx('hero', styles.heroBanner)}>
 			<div className="container">
-				<h1 className="hero__title">{siteConfig.title}</h1>
+				<h1 className="hero__title">
+					<Translate id="homepage.title">Matías Iglesias — Senior Data & AI Engineer</Translate>
+				</h1>
 
 				<h2 className={styles.tagline}>
 					<Translate id="homepage.tagline">Reliable systems for data, documents, retrieval, and automation.</Translate>
@@ -39,7 +38,7 @@ const HomePageHeader: FC = () => {
 				</p>
 
 				<div className={styles.ctaGroup} aria-label="Primary links">
-					<Link className="button button--primary button--lg" to="https://main.matuteiglesias.link/#selected-projects">
+					<Link className="button button--primary button--lg" to="/docs/General/projects">
 						<Translate id="homepage.cta.projects">View selected projects</Translate>
 					</Link>
 					<Link className="button button--secondary button--lg" to="/docs/General/cv">
@@ -53,10 +52,10 @@ const HomePageHeader: FC = () => {
 				<div className={styles.secondaryLinks} aria-label="Secondary links">
 					<Link to="https://www.linkedin.com/in/matiasiglesias/">LinkedIn</Link>
 					<Link to="https://journal.matuteiglesias.link">
-						<Translate id="homepage.secondary.journal">Developer Journal</Translate>
+						<Translate id="homepage.secondary.journal">Developer Journal / Build Log</Translate>
 					</Link>
 					<Link to="https://thesis.matuteiglesias.link">
-						<Translate id="homepage.secondary.thesis">Thesis / research</Translate>
+						<Translate id="homepage.secondary.thesis">Thesis and research background</Translate>
 					</Link>
 				</div>
 			</div>
