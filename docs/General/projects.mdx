@@ -15,23 +15,36 @@ sanitization or review, it is listed as **Evidence pending review** instead of l
 
 ## 1. Media Monitor
 
-**Role signal:** Operational AI/data automation system.
+**Role signal:** Deployed governed news-intelligence and editorial publishing system.
 
-**Brief:** An AI/data intelligence pipeline that turns raw news inputs into structured briefs, drafts, schema-valid
-handoff artifacts, and human-reviewable outputs.
+**Brief:** A governed Argentina-focused system that runs from monitored-source ingestion through immutable run artifacts,
+versioned contracts, deterministic indexes, AI-assisted briefs/drafts, an explicit human publication gate,
+publication-aware deployment snapshots, request-time freshness health, and guarded scheduled deployment.
 
 **What it proves**
 
-- I can design inspectable AI/data workflows across acquisition, enrichment, editorial generation, and publishing
-  boundaries.
-- I can separate LLM runtime output from stable contract buses and human handoff surfaces.
-- I can expose fallback visibility and operational status instead of hiding fragile assumptions in scripts.
+- I can design inspectable AI/data workflows across ingestion, enrichment, editorial generation, publication authority,
+  and deployment boundaries.
+- I can keep generated drafts separate from durable contract buses and from the explicit human authority required to
+  create public editorial content.
+- I can make deployment/currentness observable through deterministic snapshots, public health, freshness policy, and
+  pre/post-deploy guards instead of equating “has a URL” with “live.”
 
 **Evidence**
 
-- Architecture flow and module boundaries.
-- Evidence pending review: sanitized public/demo snapshot surface.
-- Evidence pending review: sample editorial handoff packet or `editorial_latest.json` shape.
+- [Canonical public outlet](https://mediamonitor-psi.vercel.app).
+- [Public freshness / deployment health](https://mediamonitor-psi.vercel.app/api/health).
+- [Documentation and architecture map](https://github.com/matuteiglesias/media_monitor/tree/main/docs).
+- [Source repository](https://github.com/matuteiglesias/media_monitor).
+- [Explicit human publication gate](https://github.com/matuteiglesias/media_monitor/blob/main/scripts/promote_draft_to_published.py).
+- [Publication-aware `site_snapshot.v2` contract](https://github.com/matuteiglesias/media_monitor/blob/main/contracts/schemas/site_snapshot.v2.json).
+- [Scheduled guarded public refresh](https://github.com/matuteiglesias/media_monitor/blob/main/.github/workflows/scheduled-publication.yml).
+- [Runtime contract evidence](https://github.com/matuteiglesias/media_monitor/actions/runs/32770941754).
+- [C3 editorial rehearsal / human-gate readiness](https://github.com/matuteiglesias/media_monitor/pull/64).
+
+A representative Media Monitor editorial article is deliberately **not** linked yet. C3 exercised the real promotion and
+indexing machinery in isolation without manufacturing `human_approved`; the first article belongs here only after an
+explicit human publication decision.
 
 <SimpleLink href="/projects/media-monitor" linkName="Open Media Monitor proof capsule" />
 

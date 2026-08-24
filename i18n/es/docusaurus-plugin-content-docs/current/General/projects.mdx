@@ -16,23 +16,36 @@ de revisión** en lugar de enlazarse.
 
 ## 1. Media Monitor
 
-**Señal de rol:** Sistema operativo de automatización con IA/datos.
+**Señal de rol:** Sistema desplegado y gobernado de inteligencia de noticias y publicación editorial.
 
-**Brief:** Un pipeline de inteligencia con IA/datos que convierte entradas de noticias en briefs estructurados,
-borradores, artefactos de traspaso con esquemas válidos y salidas revisables por humanos.
+**Brief:** Un sistema orientado a Argentina que recorre ingesta de fuentes monitoreadas, artefactos de corrida inmutables,
+contratos versionados, índices deterministas, briefs/borradores asistidos por IA, un gate humano explícito de publicación,
+snapshots versionados, health de frescura en request time y despliegue programado con guardas.
 
 **Qué demuestra**
 
-- Puedo diseñar workflows inspeccionables de IA/datos a través de límites de adquisición, enriquecimiento, generación
-  editorial y publicación.
-- Puedo separar la salida de ejecución LLM de buses contractuales estables y superficies de traspaso humano.
-- Puedo exponer visibilidad de fallback y estado operativo en lugar de esconder supuestos frágiles en scripts.
+- Puedo diseñar workflows inspeccionables de IA/datos a través de límites de ingesta, enriquecimiento, generación
+  editorial, autoridad de publicación y despliegue.
+- Puedo separar borradores generados de buses contractuales durables y de la autoridad humana explícita requerida para
+  crear contenido editorial público.
+- Puedo hacer observable el deployment y la actualidad mediante snapshots deterministas, health público, política de
+  frescura y guardas pre/post deploy, sin equiparar “tener una URL” con “estar live”.
 
 **Evidencia**
 
-- Flujo de arquitectura y límites de módulos.
-- Evidencia pendiente de revisión: superficie pública/demo sanitizada.
-- Evidencia pendiente de revisión: paquete de traspaso editorial de muestra o forma de `editorial_latest.json`.
+- [Outlet público canónico](https://mediamonitor-psi.vercel.app).
+- [Health público de frescura/deployment](https://mediamonitor-psi.vercel.app/api/health).
+- [Documentación y mapa de arquitectura](https://github.com/matuteiglesias/media_monitor/tree/main/docs).
+- [Repositorio fuente](https://github.com/matuteiglesias/media_monitor).
+- [Gate humano explícito de publicación](https://github.com/matuteiglesias/media_monitor/blob/main/scripts/promote_draft_to_published.py).
+- [Contrato `site_snapshot.v2`](https://github.com/matuteiglesias/media_monitor/blob/main/contracts/schemas/site_snapshot.v2.json).
+- [Refresh público programado y gobernado](https://github.com/matuteiglesias/media_monitor/blob/main/.github/workflows/scheduled-publication.yml).
+- [Evidencia de Runtime contracts](https://github.com/matuteiglesias/media_monitor/actions/runs/32770941754).
+- [C3: rehearsal editorial / readiness del gate humano](https://github.com/matuteiglesias/media_monitor/pull/64).
+
+Todavía no enlazo un artículo editorial representativo de Media Monitor. C3 ejercitó la maquinaria real de promoción e
+indexación en un bus aislado sin fabricar `human_approved`; el primer artículo debe aparecer acá sólo después de una
+decisión humana explícita de publicación.
 
 <SimpleLink href="/projects/media-monitor" linkName="Abrir cápsula de prueba de Media Monitor" />
 
