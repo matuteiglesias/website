@@ -58,21 +58,21 @@ const HomePageFeatures: FC = () => (
 					<h3>Media Monitor</h3>
 					<p>
 						<Translate id="features.projects.media.desc">
-							An AI/data automation system that turns raw news inputs into structured briefs, drafts, and human-reviewable outputs.
+							A deployed governed news-intelligence and editorial publishing system, from source ingestion and versioned contracts to human-gated publication, freshness health, and scheduled deployment.
 						</Translate>
 					</p>
 					<ul>
 						<li>
-							<Translate id="features.projects.media.bullet1">Python automation</Translate>
+							<Translate id="features.projects.media.bullet1">immutable ingestion and deterministic indexes</Translate>
 						</li>
 						<li>
-							<Translate id="features.projects.media.bullet2">data contracts and validation</Translate>
+							<Translate id="features.projects.media.bullet2">versioned contracts and validation</Translate>
 						</li>
 						<li>
-							<Translate id="features.projects.media.bullet3">publishing/deploy workflow</Translate>
+							<Translate id="features.projects.media.bullet3">explicit human publication gate</Translate>
 						</li>
 						<li>
-							<Translate id="features.projects.media.bullet4">operational handoff design</Translate>
+							<Translate id="features.projects.media.bullet4">freshness-checked deployment workflow</Translate>
 						</li>
 					</ul>
 					<Link to="/projects/media-monitor">

@@ -57,19 +57,19 @@
 		"message": "Proyectos seleccionados"
 	},
 	"features.projects.media.desc": {
-		"message": "Un sistema de automatización de IA/datos que convierte insumos de noticias en briefs estructurados, borradores y salidas revisables por humanos."
+		"message": "Un sistema desplegado y gobernado de inteligencia de noticias y publicación editorial, desde ingesta y contratos versionados hasta publicación con gate humano, health de frescura y despliegue programado."
 	},
 	"features.projects.media.bullet1": {
-		"message": "automatización en Python"
+		"message": "ingesta inmutable e índices deterministas"
 	},
 	"features.projects.media.bullet2": {
-		"message": "contratos de datos y validación"
+		"message": "contratos versionados y validación"
 	},
 	"features.projects.media.bullet3": {
-		"message": "workflow de publicación/despliegue"
+		"message": "gate humano explícito de publicación"
 	},
 	"features.projects.media.bullet4": {
-		"message": "diseño de transferencia operativa"
+		"message": "workflow de despliegue con control de frescura"
 	},
 	"features.projects.media.link": {
 		"message": "Ver cápsula de prueba"
