@@ -45,6 +45,9 @@ const HomePageFeatures: FC = () => (
 							<Translate id="features.links.thesis">PhD thesis and research background</Translate>
 						</Link>
 					</p>
+					<p>
+						<Link to="https://kb-contracts.matuteiglesias.link">KB Contracts reference architecture</Link>
+					</p>
 				</div>
 			</div>
 		</section>
