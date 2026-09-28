@@ -23,41 +23,14 @@ const HeadTags: FC = () => {
 				}}
 			/>
 
-			<script
-				type="application/ld+json"
-				dangerouslySetInnerHTML={{
-					__html: JSON.stringify({
-						'@context': 'https://schema.org',
-						'@type': 'BreadcrumbList',
-						itemListElement: [
-							{
-								'@type': 'ListItem',
-								position: 1,
-								name: 'Home',
-								item: 'https://main.matuteiglesias.link/'
-							},
-							{
-								'@type': 'ListItem',
-								position: 2,
-								name: 'General',
-								item: 'https://main.matuteiglesias.link/docs/General/'
-							},
-							{
-								'@type': 'ListItem',
-								position: 3,
-								name: 'Welcome',
-								item: 'https://main.matuteiglesias.link/docs/General/Welcome'
-							},
-							{
-								'@type': 'ListItem',
-								position: 4,
-								name: 'My Deployments',
-								item: 'https://main.matuteiglesias.link/docs/General/projects'
-							}
-						]
-					})
-				}}
-			/>
+			<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+				'@context': 'https://schema.org',
+				'@type': 'Person',
+				name: 'Matías Iglesias',
+				url: 'https://main.matuteiglesias.link/',
+				jobTitle: 'Senior Data & AI Engineer',
+				sameAs: ['https://github.com/matuteiglesias', 'https://www.linkedin.com/in/matiasiglesias/']
+			}) }} />
 
 			{/* Basic Metadata */}
 			<meta httpEquiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -68,7 +41,7 @@ const HeadTags: FC = () => {
 			<meta name="author" content="Matías Iglesias" />
 
 			{/* Canonical URL */}
-			<link rel="canonical" href="https://main.matuteiglesias.link" />
+			<link rel="canonical" href="https://main.matuteiglesias.link/" />
 			<link rel="alternate" hrefLang="en" href="https://main.matuteiglesias.link/" />
 			<link rel="alternate" hrefLang="es" href="https://main.matuteiglesias.link/es/" />
 
@@ -103,7 +76,7 @@ const HeadTags: FC = () => {
 				property="og:description"
 				content="Senior Data & AI Engineer building reliable systems for data, documents, retrieval, and automation."
 			/>
-			<meta property="og:url" content="https://main.matuteiglesias.link" />
+			<meta property="og:url" content="https://main.matuteiglesias.link/" />
 			<meta property="og:type" content="website" />
 			<meta property="og:image" content="/icons/android-icon-192x192.png" />
 
