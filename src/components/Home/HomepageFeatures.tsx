@@ -110,24 +110,24 @@ const HomePageFeatures: FC = () => (
 				</article>
 
 				<article className={styles.projectCard}>
-					<h3>Public Data / Poverty &amp; EPH Work</h3>
+					<h3>Argentina Poverty Measurement &amp; Atlas</h3>
 					<p>
 						<Translate id="features.projects.publicData.desc">
-							Applied economic and public-data systems combining survey data, reproducible analysis, and decision-oriented outputs.
+							A versioned data system connecting household surveys, census microdata, validation and predictive modeling to a public geographic atlas.
 						</Translate>
 					</p>
 					<ul>
 						<li>
-							<Translate id="features.projects.publicData.bullet1">Python data processing</Translate>
+							<Translate id="features.projects.publicData.bullet1">survey and census data pipelines</Translate>
 						</li>
 						<li>
-							<Translate id="features.projects.publicData.bullet2">public microdata</Translate>
+							<Translate id="features.projects.publicData.bullet2">semantic alignment and data contracts</Translate>
 						</li>
 						<li>
-							<Translate id="features.projects.publicData.bullet3">reproducible research workflows</Translate>
+							<Translate id="features.projects.publicData.bullet3">commissioning and release validation</Translate>
 						</li>
 						<li>
-							<Translate id="features.projects.publicData.bullet4">analytical reporting</Translate>
+							<Translate id="features.projects.publicData.bullet4">public maps and traceable estimates</Translate>
 						</li>
 					</ul>
 					<Link to="/projects/public-data-poverty-eph">
