@@ -109,5 +109,11 @@
 	},
 	"features.projects.publicData.link": {
 		"message": "Ver cápsula de prueba"
+	},
+	"features.seniority.title": {
+		"message": "Experiencia e instituciones"
+	},
+	"features.seniority.items": {
+		"message": "Consultoría independiente · Provincia de Buenos Aires · Banco Mundial · Harvard Growth Lab · UBA · PhD en Economía · MSc en Física"
 	}
 }
