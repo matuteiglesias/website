@@ -53,6 +53,13 @@ const HomePageFeatures: FC = () => (
 		</section>
 
 		<section className="container">
+			<div className={styles.institutionalStrip}>
+				<div><strong><Translate id="features.seniority.title">Experience &amp; institutions</Translate></strong></div>
+				<div><Translate id="features.seniority.items">Independent consulting · Buenos Aires Province · World Bank · Harvard Growth Lab · UBA · PhD Economics · MSc Physics</Translate></div>
+			</div>
+		</section>
+
+		<section className="container">
 			<h2 id="selected-projects">
 				<Translate id="features.projects.title">Selected projects</Translate>
 			</h2>
@@ -78,9 +85,9 @@ const HomePageFeatures: FC = () => (
 							<Translate id="features.projects.media.bullet4">freshness-checked deployment workflow</Translate>
 						</li>
 					</ul>
-					<Link to="/projects/media-monitor">
+					<div className={styles.projectLinks}><Link to="/projects/media-monitor">
 						<Translate id="features.projects.media.link">View proof capsule</Translate>
-					</Link>
+					</Link><Link to="https://github.com/matuteiglesias/media_monitor">Code</Link><Link to="https://mediamonitor-psi.vercel.app">Live</Link></div>
 				</article>
 
 				<article className={styles.projectCard}>
@@ -104,9 +111,9 @@ const HomePageFeatures: FC = () => (
 							<Translate id="features.projects.contracts.bullet4">smoke tests</Translate>
 						</li>
 					</ul>
-					<Link to="/projects/kb-contracts">
+					<div className={styles.projectLinks}><Link to="/projects/kb-contracts">
 						<Translate id="features.projects.contracts.link">View proof capsule</Translate>
-					</Link>
+					</Link><Link to="https://github.com/matuteiglesias/kb-contracts">Code</Link></div>
 				</article>
 
 				<article className={styles.projectCard}>
@@ -130,9 +137,9 @@ const HomePageFeatures: FC = () => (
 							<Translate id="features.projects.publicData.bullet4">public maps and traceable estimates</Translate>
 						</li>
 					</ul>
-					<Link to="/projects/public-data-poverty-eph">
+					<div className={styles.projectLinks}><Link to="/projects/public-data-poverty-eph">
 						<Translate id="features.projects.publicData.link">View proof capsule</Translate>
-					</Link>
+					</Link><Link to="https://github.com/matuteiglesias/argentina-poverty-atlas">Code</Link><Link to="https://pobreza-argentina.vercel.app">Live</Link></div>
 				</article>
 			</div>
 		</section>
