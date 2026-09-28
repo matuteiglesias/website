@@ -44,3 +44,7 @@
 		grid-template-columns: 1fr;
 	}
 }
+
+.institutionalStrip { display: grid; grid-template-columns: minmax(12rem, 0.7fr) minmax(0, 2fr); gap: 1rem; padding: 1rem 1.25rem; border: 1px solid var(--ifm-color-emphasis-300); border-radius: 12px; background: var(--ifm-card-background-color); }
+.projectLinks { display: flex; flex-wrap: wrap; gap: 1rem; align-items: center; }
+@media screen and (max-width: 966px) { .institutionalStrip { grid-template-columns: 1fr; } }
