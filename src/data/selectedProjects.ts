@@ -231,64 +231,28 @@ export const selectedProjects: Record<string, SelectedProject> = {
 	},
 	'public-data-poverty-eph': {
 		slug: 'public-data-poverty-eph',
-		title: 'Public Data / Poverty & EPH',
-		subtitle:
-			'A public-data analysis project combining Argentine household survey microdata, socioeconomic modeling, maps, and reproducible analytical outputs.',
-		roleSignal: 'Research-grade public data product',
-		problem:
-			'Public poverty and socioeconomic data are difficult to explore when raw survey microdata, geographic units, indicators, notebooks, and visual outputs are disconnected. Analysts and citizens need reproducible paths from official/public datasets to interpretable maps, charts, and summaries.',
-		whatIBuilt:
-			'A poverty and socioeconomic analysis pipeline for Argentina using household survey microdata, statistical analysis, geospatial processing, predictive modeling, and public-facing outputs such as maps, charts, and tables.',
-		systemFlow: [
-			'Public microdata / survey inputs',
-			'cleaning and harmonization',
-			'socioeconomic indicators',
-			'statistical / geospatial analysis',
-			'maps, charts, tables',
-			'public-facing atlas / documentation'
-		],
-		stack: [
-			'Python',
-			'Jupyter',
-			'pandas / geopandas-style workflows',
-			'statistical analysis',
-			'geospatial processing',
-			'public datasets',
-			'HTML / static outputs'
-		],
+		title: 'Argentina Poverty Measurement & Atlas',
+		subtitle: 'A versioned survey-to-census data system with semantic alignment, predictive modeling, commissioning, and a public geographic atlas.',
+		roleSignal: 'End-to-end data engineering, validation, modeling, and public data product',
+		problem: 'Survey and census microdata have different coverage and semantics. Publishing geographically detailed estimates requires explicit alignment, model-support checks, reproducible releases, and clear distinctions between observed and predictive results.',
+		whatIBuilt: 'A multi-repository system connecting EPH household surveys, census microdata, semantic alignment, person-level income modeling, commissioning checks, governed releases, and a public atlas with geographic exploration.',
+		systemFlow: ['EPH and Census inputs', 'semantic alignment and support diagnostics', 'person-level modeling', 'household aggregation', 'commissioning and calibration', 'versioned release', 'public geographic atlas'],
+		stack: ['Python', 'SQL', 'TypeScript', 'data contracts', 'statistical modeling', 'geospatial data', 'CI/CD', 'Vercel'],
 		evidence: [
-			{ label: 'Repository: indice-pobreza-UBA', href: 'https://github.com/matuteiglesias/indice-pobreza-UBA', status: 'ready' },
-			{ label: 'Civic/public-data overview', href: '/docs/General/civic', status: 'ready' },
-			{ label: 'Screenshot of poverty map / atlas', status: 'needs-review' },
-			{ label: 'Methodology section', status: 'needs-review' },
-			{ label: 'Example notebook or script', status: 'needs-review' },
-			{ label: 'Sample chart/table', status: 'needs-review' },
-			{ label: 'Data sources page', status: 'needs-review' },
-			{ label: 'Reliable live demo path', status: 'missing' }
+			{ label: 'Atlas frontend and release implementation', href: 'https://github.com/matuteiglesias/argentina-poverty-atlas', status: 'ready' },
+			{ label: 'Poverty measurement producer', href: 'https://github.com/matuteiglesias/indice-pobreza-UBA', status: 'ready' },
+			{ label: 'Survey/Census semantic aligner', href: 'https://github.com/matuteiglesias/eph-censo-aligner', status: 'ready' },
+			{ label: 'Public atlas (verify live behavior before relying on maps)', href: 'https://pobreza-argentina.vercel.app', status: 'needs-review' }
 		],
-		proves: [
-			'Apply research-grade analytical judgment to public socioeconomic data rather than only moving JSON artifacts.',
-			'Build reproducible paths from survey microdata to indicators, geospatial analysis, and human-facing outputs.',
-			'Translate economic research into inspectable maps, charts, tables, and documentation for public audiences.'
-		],
-		status: 'Public research/data product. Needs a sharper external case-study wrapper and a reliable demo/screenshot path before it should be treated as a flagship engineering proof.',
-		limitations: [
-			'This should be positioned third for AI/backend roles: it proves analytical depth and research-to-product capability, not operational AI automation first.',
-			'The live demo should not be primary evidence until it is fast and reliable; use repo/docs and archived screenshots until fixed.',
-			'The external wrapper should emphasize sources, pipeline, outputs, reproducibility, maps, and limits over broad research claims.'
-		],
-		primaryCta: {
-			label: 'Repository',
-			href: 'https://github.com/matuteiglesias/indice-pobreza-UBA'
-		},
+		proves: ['Build governed data pipelines across heterogeneous public datasets.', 'Distinguish observed, fitted and predictive estimates and preserve geographic support boundaries.', 'Ship inspectable analytical releases consumed by a public web application.'],
+		status: 'Public frontend and versioned release pipeline implemented; individual periods, geographic coverage, and live map behavior must be verified against each release.',
+		limitations: ['Predictive estimates are not official INDEC statistics.', 'Geographic coverage and period availability are release-specific; do not infer full 2022–2025 coverage.', 'Live map functionality was not independently verified in this portfolio audit.'],
+		primaryCta: { label: 'Inspect Atlas repository', href: 'https://github.com/matuteiglesias/argentina-poverty-atlas' },
 		secondaryCtas: [
-			{ label: 'Civic data overview', href: '/docs/General/civic' },
+			{ label: 'Public Atlas', href: 'https://pobreza-argentina.vercel.app' },
+			{ label: 'Measurement producer', href: 'https://github.com/matuteiglesias/indice-pobreza-UBA' },
+			{ label: 'Semantic aligner', href: 'https://github.com/matuteiglesias/eph-censo-aligner' },
 			{ label: 'Back to homepage', href: '/' }
-		],
-		principles: [
-			'Official/public inputs should be traceable to the indicators and outputs they produce.',
-			'Notebooks and analysis artifacts need a clear path into maps, charts, tables, and documentation.',
-			'Limitations and demo reliability should be stated explicitly rather than hidden behind broad claims.'
 		]
 	}
 };
