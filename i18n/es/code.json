@@ -93,19 +93,19 @@
 		"message": "Ver cápsula de prueba"
 	},
 	"features.projects.publicData.desc": {
-		"message": "Sistemas aplicados de economía y datos públicos que combinan datos de encuestas, análisis reproducible y salidas orientadas a decisiones."
+		"message": "Un sistema versionado que conecta encuestas de hogares, microdatos censales, validación y modelado predictivo con un atlas geográfico público."
 	},
 	"features.projects.publicData.bullet1": {
-		"message": "procesamiento de datos en Python"
+		"message": "pipelines de encuestas y censos"
 	},
 	"features.projects.publicData.bullet2": {
-		"message": "microdatos públicos"
+		"message": "alineación semántica y contratos de datos"
 	},
 	"features.projects.publicData.bullet3": {
-		"message": "workflows de investigación reproducible"
+		"message": "validación de resultados y releases"
 	},
 	"features.projects.publicData.bullet4": {
-		"message": "reportes analíticos"
+		"message": "mapas públicos y estimaciones trazables"
 	},
 	"features.projects.publicData.link": {
 		"message": "Ver cápsula de prueba"
