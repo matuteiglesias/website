@@ -42,7 +42,13 @@ const spanishLinkLabels: Record<string,string> = {
   "Operator telemetry tests": "Tests de telemetría operativa",
   "Public outlet health check": "Health check público",
   "Atlas repository and release implementation": "Repositorio del Atlas e implementación de releases",
-  "Scientific producer repository": "Repositorio del producer científico"
+  "Scientific producer repository": "Repositorio del producer científico",
+  "Inspect source repository": "Ver repositorio fuente",
+  "Read thesis archive": "Leer archivo de tesis",
+  "Back to Research": "Volver a Investigación",
+  "Scaling decomposition tests": "Tests de descomposición de scaling",
+  "Variance identity tests": "Tests de identidad de varianza",
+  "Thesis archive": "Archivo de tesis"
 };
 
 type SelectedProjectPageProps = { project: SelectedProject };

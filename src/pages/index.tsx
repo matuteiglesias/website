@@ -25,7 +25,7 @@ export default function Home(): JSX.Element {
 	// i18n-ready title and description (stable IDs for extraction)
 	const title = translate({
 		id: 'homepage.title',
-		message: `${siteConfig.title ?? 'Matías Iglesias — Senior Data & AI Engineer'}`
+		message: `${siteConfig.title ?? 'Matías Iglesias, Senior Data & AI Engineer'}`
 	});
 
 	const description = translate({

@@ -22,8 +22,8 @@ export default function Research(): JSX.Element {
 						</h1>
 						<p className={styles.intro}>
 							<Translate id="research.identity">
-								I pursue an independent research programme on how aggregation, heterogeneity, volatility, normalization and spatial
-								support shape economic quantities and decisions.
+								I study how fluctuations across heterogeneous firms combine into macroeconomic volatility, and how normalization and
+								geographic units change economic measures.
 							</Translate>
 						</p>
 					</header>
@@ -35,8 +35,8 @@ export default function Research(): JSX.Element {
 							</h2>
 							<p>
 								<Translate id="research.question.body">
-									What changes when observations are grouped, weighted, normalized or located in space—and which conclusions survive
-									those transformations?
+									When economic data are weighted, grouped or normalized, which relationships follow from the transformation itself,
+									and which require additional empirical assumptions?
 								</Translate>
 							</p>
 						</div>
@@ -47,8 +47,8 @@ export default function Research(): JSX.Element {
 								</h3>
 								<p>
 									<Translate id="research.pillar.aggregation.body">
-										The central pillar: understanding how distributions, composition and temporal variation affect aggregate
-										indicators.
+										Decomposing aggregate volatility into weighted firm-level variances, covariance terms and the effects of
+										changing composition.
 									</Translate>
 								</p>
 							</article>
@@ -91,7 +91,8 @@ export default function Research(): JSX.Element {
 								</h3>
 								<p>
 									<Translate id="research.lq.body">
-										International Economics, 2021. A peer-reviewed study of size distortions in location quotients.
+										International Economics, 2021. Explains how observation size distorts location quotients and motivates
+										probabilistic specialization measurement.
 									</Translate>
 								</p>
 								<Link to="https://doi.org/10.1016/j.inteco.2021.05.005">
@@ -107,7 +108,8 @@ export default function Research(): JSX.Element {
 								</h3>
 								<p>
 									<Translate id="research.thesis.body">
-										The doctoral thesis is a separate academic output, not an additional journal publication.
+										Doctoral research developing mathematical and computational accounts of how heterogeneous micro-level
+										fluctuations generate aggregate volatility.
 									</Translate>
 								</p>
 							</article>
@@ -120,8 +122,8 @@ export default function Research(): JSX.Element {
 								</h3>
 								<p>
 									<Translate id="research.manuscript.body">
-										A current manuscript with formal and empirical work on aggregation. It is not presented as an arXiv preprint
-										or journal publication.
+										The current manuscript separates economic concentration from volatility scaling and tests an exact
+										decomposition of variance and covariance contributions in code.
 									</Translate>
 								</p>
 							</article>
@@ -136,7 +138,8 @@ export default function Research(): JSX.Element {
 								</h3>
 								<p>
 									<Translate id="research.geo.body">
-										A 2021 working paper on geographic correlation structures, distinct from the peer-reviewed LQ paper.
+										A 2021 working paper examining how correlation structures and spatial normalization affect economic
+										co-location measures. Newer extensions remain under review.
 									</Translate>
 								</p>
 							</article>
@@ -171,14 +174,18 @@ export default function Research(): JSX.Element {
 									<Translate id="research.status.software">Software / research artifact</Translate>
 								</p>
 								<h3>
-									<Translate id="research.abm.title">K+S-inspired agent-based model revival</Translate>
+									<Translate id="research.aggregation.title">Micro-to-macro reconstruction of aggregate volatility</Translate>
 								</h3>
 								<p>
-									<Translate id="research.abm.body">
-										A computational reconstruction with bounded software evidence; model equivalence, calibration and scientific
-										validity remain open.
+									<Translate id="research.aggregation.body">
+										I derived aggregate-volatility contributions from weighted firm variances and signed covariances, then
+										implemented Python tests of the exact identities. The computations distinguish accounting results from
+										assumptions needed for a scaling law.
 									</Translate>
 								</p>
+								<Link to="/projects/micro-to-macro-aggregation">
+									<Translate id="research.engineering">See the engineering evidence</Translate>
+								</Link>
 							</article>
 						</div>
 					</section>
@@ -189,8 +196,8 @@ export default function Research(): JSX.Element {
 						</h2>
 						<p>
 							<Translate id="research.methods.body">
-								The programme combines analytical derivation, simulation, statistical measurement, reproducible computation and
-								careful separation of estimands, evidence and interpretation.
+								I use formal derivations, simulations and numerical tests to check mathematical identities; survey and spatial
+								projects add estimation, validation and explicit data-support limits.
 							</Translate>
 						</p>
 						<p>

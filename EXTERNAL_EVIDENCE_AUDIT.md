@@ -1,6 +1,6 @@
 # External-facing evidence audit
 
-## P0 — must fix before outreach
+## P0, must fix before outreach
 
 - Root homepage positioning must use the canonical **Senior Data & AI Engineer** framing, not older Data Scientist or generic portfolio language.
     - Exact files: `src/pages/index.tsx`, `src/components/Home/HomePageHeader.tsx`, `src/components/Home/HomepageFeatures.tsx`, `src/components/Home/HeadTags.tsx`.
@@ -15,13 +15,13 @@
 - Broken or wrong search must not appear publicly. The existing Algolia config used the upstream `sapphirejs` index, so search should be hidden until a Matías Iglesias index exists.
     - Exact file: `docusaurus.config.ts`.
 
-## P1 — fix this week
+## P1, fix this week
 
 - PWA/package metadata still contains upstream Sapphire branding in `package.json`, `static/manifest.webmanifest`, and/or `static/icons/manifest.json` and should be cleaned before promoting install/share surfaces.
 - Legacy public redirect routes such as `src/pages/kofi.tsx` and `src/pages/ghorg.tsx` should not send users to upstream Sapphire properties.
 - Some deeper docs still use historical AI Engineer/Data Scientist wording; keep only if intentional historical context, otherwise align over time.
 
-## P2 — later polish
+## P2, later polish
 
 - Make home canonical/alternate tags locale-aware instead of static.
 - Replace any legacy social handles after confirming the correct public handle.

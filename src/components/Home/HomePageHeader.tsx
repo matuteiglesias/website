@@ -16,7 +16,7 @@ const HomePageHeader: FC = () => {
 		<header className={clsx('hero', styles.heroBanner)}>
 			<div className="container">
 				<h1 className="hero__title">
-					<Translate id="homepage.title">Matías Iglesias — Senior Data & AI Engineer</Translate>
+					<Translate id="homepage.title">Matías Iglesias, Senior Data & AI Engineer</Translate>
 				</h1>
 
 				<h2 className={styles.tagline}>
@@ -25,7 +25,7 @@ const HomePageHeader: FC = () => {
 
 				<p className={styles.description}>
 					<Translate id="homepage.description2">
-						I design and build reliable software for AI workflows, documents and complex data—from ingestion and validation to controlled
+						I design and build reliable software for AI workflows, documents and complex data, from ingestion and validation to controlled
 						delivery.
 					</Translate>
 				</p>

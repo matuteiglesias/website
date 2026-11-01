@@ -1,6 +1,6 @@
 {
 	"homepage.title": {
-		"message": "Matías Iglesias — Senior Data & AI Engineer"
+		"message": "Matías Iglesias, Senior Data & AI Engineer"
 	},
 	"homepage.description": {
 		"message": "Senior Data & AI Engineer construyendo sistemas confiables para datos, documentos, recuperación de información y automatización."
@@ -189,13 +189,13 @@
 		"message": "Sistemas de IA, datos y medición con evidencia inspectable."
 	},
 	"engineering.intro": {
-		"message": "Construyo sistemas confiables donde los workflows modernos de IA se encuentran con modelos de datos sólidos, razonamiento estadístico y restricciones operativas. Los ejemplos muestran comportamiento acotado de modelos, procesamiento determinista, pruebas y límites explícitos de autoridad."
+		"message": "Implemento workflows asistidos por IA y productos estadísticos con contratos explícitos entre datos de origen, procesamiento y publicación. Los casos muestran dónde intervienen los modelos, cómo se verifican las salidas y quién conserva la autoridad."
 	},
 	"engineering.ai.title": {
 		"message": "Sistemas de IA y agentes"
 	},
 	"engineering.ai.intro": {
-		"message": "Los sistemas asistidos por LLM son software: necesitan acceso contextual, componentes testeables, caminos de falla y un límite humano claro alrededor de los resultados con consecuencias."
+		"message": "Separo los borradores generados de los registros persistentes, condiciono la publicación a una aprobación explícita y limito el contexto de los agentes a recursos identificados de solo lectura."
 	},
 	"engineering.media.title": {
 		"message": "Media Monitor"
@@ -219,7 +219,7 @@
 		"message": "Datos, medición y sistemas de decisión"
 	},
 	"engineering.data.intro": {
-		"message": "Trabajo con inferencia estadística, modelado numérico y computacional, metodología de encuestas, incertidumbre y presentación geoespacial; no solamente ETL."
+		"message": "Mi trabajo con datos combina metodología de encuestas, inferencia estadística, pipelines reproducibles y entrega geoespacial, con checks explícitos sobre incertidumbre y soporte de los modelos."
 	},
 	"engineering.accounting.title": {
 		"message": "Accounting Workflows"
@@ -260,6 +260,30 @@
 	"engineering.methods.body": {
 		"message": "Parto del modelo de datos, de la decisión que el sistema debe apoyar y de los límites entre fuentes, cómputo y autoridad. Prefiero interfaces simples y verificables; procesamiento determinista cuando corresponde; comportamiento acotado de modelos o agentes cuando hace falta; y pruebas, trazabilidad y recuperación explícitas. Utilizo agentes de programación en tareas delimitadas, manteniendo la responsabilidad por el diseño, la revisión y la publicación."
 	},
+	"engineering.additional.title": {
+		"message": "Otras pruebas técnicas"
+	},
+	"engineering.additional.census": {
+		"message": "Reconstruí registros de viviendas, hogares y personas de los archivos RedatamX del Censo argentino de 2022, y verifiqué sus relaciones en un radio censal de 6.992 personas. Es un resultado acotado, no una extracción nacional completa."
+	},
+	"engineering.additional.censusLink": {
+		"message": "Abrir documentación pública del extractor"
+	},
+	"engineering.additional.office": {
+		"message": "Construí un compilador que transforma un snapshot operativo validado en tareas tipadas, paquetes de ejecución acotados y registros de ejecución trazables."
+	},
+	"engineering.additional.officeLink": {
+		"message": "Inspeccionar Office Auto Lab"
+	},
+	"engineering.additional.thesis": {
+		"message": "Dirigí una tesis de Licenciatura en Ciencias de Datos en Exactas UBA que compara modelos de aprendizaje supervisado para ingresos en datos de la EPH."
+	},
+	"engineering.additional.decomposition": {
+		"message": "Para la reconstrucción micro-macro de la volatilidad implementé identidades exactas de varianza agregada en Python y verifiqué covarianzas con signo, componentes inconsistentes e invariancia al orden de entrada."
+	},
+	"engineering.additional.decompositionLink": {
+		"message": "Abrir el caso de evidencia"
+	},
 	"research.eyebrow": {
 		"message": "Programa de investigación"
 	},
@@ -270,19 +294,19 @@
 		"message": "Investigación independiente sobre agregación, medición y geografía económica."
 	},
 	"research.identity": {
-		"message": "Desarrollo un programa de investigación independiente sobre cómo la agregación, la heterogeneidad, la volatilidad, la normalización y el soporte espacial transforman las cantidades económicas y las decisiones."
+		"message": "Estudio cómo las fluctuaciones de firmas heterogéneas se combinan en la volatilidad macroeconómica y cómo la normalización y las unidades geográficas cambian las medidas económicas."
 	},
 	"research.question.title": {
 		"message": "Pregunta central"
 	},
 	"research.question.body": {
-		"message": "¿Qué cambia cuando las observaciones se agrupan, ponderan, normalizan o ubican en el espacio, y qué conclusiones sobreviven a esas transformaciones?"
+		"message": "Cuando los datos económicos se ponderan, agrupan o normalizan, ¿qué relaciones se deducen de la transformación y cuáles requieren hipótesis empíricas adicionales?"
 	},
 	"research.pillar.aggregation": {
 		"message": "Agregación, heterogeneidad y volatilidad"
 	},
 	"research.pillar.aggregation.body": {
-		"message": "El eje central: entender cómo las distribuciones, la composición y la variación temporal afectan los indicadores agregados."
+		"message": "Descomposición de la volatilidad agregada en varianzas ponderadas de firmas, términos de covarianza y efectos de cambios en la composición."
 	},
 	"research.pillar.lq": {
 		"message": "Especialización y cocientes de localización"
@@ -306,7 +330,7 @@
 		"message": "Measuring Size Distortions of Location Quotients"
 	},
 	"research.lq.body": {
-		"message": "International Economics, 2021. Estudio revisado por pares sobre distorsiones de tamaño en cocientes de localización."
+		"message": "International Economics, 2021. Analiza cómo el tamaño de la observación distorsiona los location quotients y motiva medidas probabilísticas de especialización."
 	},
 	"research.doi": {
 		"message": "Leer el registro DOI"
@@ -318,7 +342,7 @@
 		"message": "Essays in the Economics of Aggregation"
 	},
 	"research.thesis.body": {
-		"message": "La tesis doctoral es un resultado académico separado, no una publicación adicional de revista."
+		"message": "Investigación doctoral con derivaciones matemáticas y análisis computacional sobre cómo las fluctuaciones micro de unidades heterogéneas generan volatilidad agregada."
 	},
 	"research.status.manuscript": {
 		"message": "Manuscrito actual"
@@ -327,7 +351,7 @@
 		"message": "Concentration Is Not Scaling"
 	},
 	"research.manuscript.body": {
-		"message": "Un manuscrito actual con trabajo formal y empírico sobre agregación. No se presenta como preprint de arXiv ni como publicación de revista."
+		"message": "El manuscrito actual distingue concentración económica de scaling de volatilidad y verifica en código una descomposición exacta de contribuciones de varianza y covarianza."
 	},
 	"research.status.working": {
 		"message": "Documento de trabajo"
@@ -336,7 +360,7 @@
 		"message": "The Overlooked Insights from Correlation Structures in Economic Geography"
 	},
 	"research.geo.body": {
-		"message": "Un documento de trabajo de 2021 sobre estructuras de correlación geográfica, distinto del artículo revisado por pares sobre LQ."
+		"message": "Working paper de 2021 sobre cómo las estructuras de correlación y la normalización espacial afectan las medidas de co-localización económica. Las extensiones recientes siguen bajo revisión."
 	},
 	"research.applied.title": {
 		"message": "Trabajo aplicado y computacional"
@@ -356,17 +380,17 @@
 	"research.status.software": {
 		"message": "Software / artefacto de investigación"
 	},
-	"research.abm.title": {
-		"message": "Revival de un modelo basado en agentes inspirado en K+S"
+	"research.aggregation.title": {
+		"message": "Reconstrucción micro-macro de la volatilidad agregada"
 	},
-	"research.abm.body": {
-		"message": "Una reconstrucción computacional con evidencia de software acotada; la equivalencia del modelo, la calibración y la validez científica siguen abiertas."
+	"research.aggregation.body": {
+		"message": "Derivé las contribuciones a la volatilidad agregada a partir de varianzas ponderadas de firmas y covarianzas con signo, y verifiqué las identidades exactas con tests de Python. El cálculo distingue los resultados contables de las hipótesis necesarias para una ley de scaling."
 	},
 	"research.methods.title": {
 		"message": "Métodos y trayectoria académica"
 	},
 	"research.methods.body": {
-		"message": "El programa combina derivación analítica, simulación, medición estadística, computación reproducible y una separación cuidadosa entre estimandos, evidencia e interpretación."
+		"message": "Uso derivaciones formales, simulaciones y tests numéricos para verificar identidades matemáticas; los proyectos de encuestas y geografía agregan estimación, validación y límites explícitos de soporte de datos."
 	},
 	"research.methods.portalIntro": {
 		"message": "El portal de investigación reúne la tesis y materiales relacionados."

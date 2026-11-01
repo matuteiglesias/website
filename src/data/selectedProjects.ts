@@ -378,7 +378,7 @@ const povertyAtlas: SelectedProject = {
 		{ label: 'Public Atlas', href: 'https://pobreza-argentina.vercel.app', status: 'check' }
 	],
 	proves: [
-		'Work across survey methodology, statistical inference, numerical modeling, and geospatial delivery—not only ETL.',
+		'Work across survey methodology, statistical inference, numerical modeling, and geospatial delivery, not only ETL.',
 		'Separate scientific estimates, release contracts, and public presentation.',
 		'Use QA and support boundaries to avoid turning a fixture or URL into an official statistic.'
 	],
@@ -426,12 +426,94 @@ const kbContracts: SelectedProject = {
 	]
 };
 
+const microToMacroAggregation: SelectedProject = {
+	slug: 'micro-to-macro-aggregation',
+	title: 'Micro-to-macro reconstruction of aggregate volatility',
+	subtitle:
+		'A formal and computational proof case for decomposing weighted micro-unit fluctuations into aggregate variance and covariance contributions.',
+	roleSignal: 'Research computation, variance identities and reproducible tests',
+	problem:
+		'Aggregate volatility is easy to misread when weighted units differ in size, variance and co-movement. The task is to account for how marginal fluctuations and signed covariance terms combine without replacing an identity with an informal scaling claim.',
+	whatIBuilt:
+		'I implemented a proof-oriented computational case around an exact additive decomposition of weighted micro-unit variance into diagonal variance and signed covariance contributions. The code separates the mathematical identity, demonstrations and deterministic checks so the result can be inspected without treating it as an empirical estimate.',
+	responsibilities: [
+		'Derived and encoded the weighted variance decomposition and its component terms.',
+		'Designed the Python demonstrations and tests around the identity rather than a fitted scaling law.',
+		'Kept the thesis, current manuscript and public source code as distinct evidence routes.'
+	],
+	engineeringDecisions: [
+		{
+			decision: 'Represent aggregate variance as additive diagonal and signed covariance contributions.',
+			tradeoff: 'The decomposition is exact and auditable, but it does not by itself identify a universal empirical scaling exponent.'
+		},
+		{
+			decision: 'Test the identity deterministically before presenting numerical demonstrations.',
+			tradeoff: 'This prioritizes mathematical and implementation correctness over claims about external datasets.'
+		},
+		{
+			decision: 'Link the engineering proof case to the source repository and thesis archive.',
+			tradeoff: 'Readers can inspect the route from formal argument to code, while publication status remains explicit.'
+		}
+	],
+	evaluation: {
+		summary:
+			'The public repository includes deterministic tests for the scaling decomposition and variance identity, plus executable demonstrations of the component terms.',
+		tests: [
+			'tests/test_scaling_decomposition.py: checks the decomposition components.',
+			'tests/test_variance_identity.py: checks the aggregate variance identity.'
+		],
+		recovery: 'A failing identity test blocks confidence in the corresponding computational result.'
+	},
+	systemFlow: [
+		'weighted micro-unit observations',
+		'marginal variance and heterogeneity terms',
+		'signed covariance terms',
+		'exact aggregate variance identity',
+		'deterministic tests and demonstrations'
+	],
+	stack: ['Python', 'NumPy', 'pytest', 'Jupyter / numerical demonstrations'],
+	evidence: [
+		{ label: 'Source repository', href: 'https://github.com/matuteiglesias/concentration-is-not-scaling', status: 'verified' },
+		{
+			label: 'Scaling decomposition tests',
+			href: 'https://github.com/matuteiglesias/concentration-is-not-scaling/blob/main/tests/test_scaling_decomposition.py',
+			status: 'defined'
+		},
+		{
+			label: 'Variance identity tests',
+			href: 'https://github.com/matuteiglesias/concentration-is-not-scaling/blob/main/tests/test_variance_identity.py',
+			status: 'defined'
+		},
+		{ label: 'Thesis archive', href: 'https://thesis.matuteiglesias.link/', status: 'verified' }
+	],
+	proves: [
+		'Implement an exact additive variance decomposition with signed covariance terms.',
+		'Connect formal reasoning to deterministic numerical tests and demonstrations.',
+		'Keep a scientific identity distinct from an empirical scaling estimate.'
+	],
+	status: 'Public source code and thesis archive available; the current manuscript is not peer-reviewed or an accepted paper.',
+	limitations: [
+		'This case does not reproduce the French-exporter empirical variance-decay estimate.',
+		'It does not claim a new universal scaling law, priority or superiority over another author.',
+		'Tests establish the encoded identity and examples, not external empirical validity.'
+	],
+	usersContext:
+		'A supporting research-computation artifact for inspecting the mathematical and software route from micro-level fluctuations to aggregate volatility.',
+	deploymentType: 'Public GitHub source and thesis archive; no hosted application or publication acceptance is claimed.',
+	primaryCta: { label: 'Inspect source repository', href: 'https://github.com/matuteiglesias/concentration-is-not-scaling' },
+	secondaryCtas: [
+		{ label: 'Read thesis archive', href: 'https://thesis.matuteiglesias.link/' },
+		{ label: 'Back to Research', href: '/research' }
+	]
+};
+
 export const selectedProjects: Record<string, SelectedProject> = {
 	'media-monitor': mediaMonitor,
 	'matias-context-mcp': matiasContextMcp,
 	'accounting-workflows': accountingWorkflows,
 	'public-data-poverty-eph': povertyAtlas,
-	'kb-contracts': kbContracts
+	'kb-contracts': kbContracts,
+	'micro-to-macro-aggregation': microToMacroAggregation
 };
 
 export type ProjectTranslation = Partial<Omit<SelectedProject, 'slug' | 'evidence' | 'stack' | 'primaryCta' | 'secondaryCtas'>>;
@@ -687,5 +769,64 @@ export const selectedProjectsEs: Record<string, ProjectTranslation> = {
 		status: 'Manual público de referencia; caso de soporte, no flagship.',
 		limitations: ['Es un artefacto de arquitectura, no un producto end-user.'],
 		proves: ['Diseñar capas de confiabilidad inspeccionables.', 'Definir límites, versionado y observabilidad.']
+	},
+	'micro-to-macro-aggregation': {
+		title: 'Reconstrucción micro-macro de la volatilidad agregada',
+		subtitle:
+			'Un caso formal y computacional para descomponer las fluctuaciones ponderadas de unidades micro en contribuciones de varianza y covarianza.',
+		roleSignal: 'Computación de investigación, identidades de varianza y tests reproducibles',
+		problem:
+			'La volatilidad agregada puede interpretarse mal cuando las unidades ponderadas difieren en tamaño, varianza y co-movimiento. El objetivo es contabilizar cómo se combinan las fluctuaciones marginales y los términos de covarianza con signo, sin convertir una identidad en una afirmación informal de scaling.',
+		whatIBuilt:
+			'Implementé un caso computacional orientado a la demostración alrededor de una descomposición aditiva exacta de la varianza micro ponderada en contribuciones diagonales de varianza y covarianza con signo. El código separa la identidad matemática, las demostraciones y los checks deterministas.',
+		responsibilities: [
+			'Derivé y codifiqué la descomposición de varianza ponderada y sus componentes.',
+			'Diseñé las demostraciones y tests de Python alrededor de la identidad, no de una ley de scaling ajustada.',
+			'Mantuve separadas la tesis, el manuscrito actual y el código público como rutas de evidencia.'
+		],
+		engineeringDecisions: [
+			{
+				decision: 'Representar la varianza agregada como contribuciones diagonales y covarianzas con signo.',
+				tradeoff: 'La descomposición es exacta y auditable, pero no identifica por sí sola un exponente empírico universal.'
+			},
+			{
+				decision: 'Probar determinísticamente la identidad antes de mostrar demostraciones numéricas.',
+				tradeoff: 'Prioriza la corrección matemática y de implementación sobre claims acerca de datasets externos.'
+			},
+			{
+				decision: 'Vincular el caso de ingeniería con el repo fuente y el archivo de tesis.',
+				tradeoff: 'Permite inspeccionar el recorrido de argumento formal a código sin confundirlo con status editorial.'
+			}
+		],
+		evaluation: {
+			summary:
+				'El repositorio público incluye tests deterministas para la descomposición de scaling y la identidad de varianza, además de demostraciones ejecutables de los componentes.',
+			tests: [
+				'tests/test_scaling_decomposition.py: checks de los componentes.',
+				'tests/test_variance_identity.py: check de la identidad de varianza agregada.'
+			],
+			recovery: 'Un test de identidad fallido bloquea la confianza en el resultado computacional correspondiente.'
+		},
+		systemFlow: [
+			'observaciones micro ponderadas',
+			'varianza marginal y heterogeneidad',
+			'términos de covarianza con signo',
+			'identidad exacta de varianza agregada',
+			'tests deterministas y demostraciones'
+		],
+		proves: [
+			'Implementar una descomposición aditiva exacta con covarianzas con signo.',
+			'Conectar razonamiento formal con tests numéricos deterministas.',
+			'Separar una identidad científica de una estimación empírica de scaling.'
+		],
+		status: 'Código fuente público y archivo de tesis disponibles; el manuscrito actual no está revisado por pares ni es un paper aceptado.',
+		limitations: [
+			'Este caso no reproduce la estimación empírica de decaimiento de varianza de exportadores franceses.',
+			'No afirma una ley de scaling universal, prioridad ni superioridad sobre otro autor.',
+			'Los tests establecen la identidad codificada y ejemplos, no validez empírica externa.'
+		],
+		usersContext:
+			'Artefacto de computación de investigación para inspeccionar el recorrido matemático y de software desde fluctuaciones micro a volatilidad agregada.',
+		deploymentType: 'Código público en GitHub y archivo de tesis; no se afirma una aplicación hosted ni aceptación editorial.'
 	}
 };

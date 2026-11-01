@@ -28,6 +28,16 @@
 	grid-template-columns: repeat(2, minmax(0, 1fr));
 	gap: 1.25rem;
 }
+.proofList {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 1.25rem;
+	padding: 0;
+	list-style-position: inside;
+}
+.proofList li {
+	padding-left: 0.35rem;
+}
 .card {
 	border: 1px solid var(--ifm-color-emphasis-300);
 	border-radius: 12px;
@@ -68,6 +78,9 @@
 		padding: 2.5rem 0 3rem;
 	}
 	.cardGrid {
+		grid-template-columns: 1fr;
+	}
+	.proofList {
 		grid-template-columns: 1fr;
 	}
 }

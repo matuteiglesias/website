@@ -23,14 +23,19 @@ const HeadTags: FC = () => {
 				}}
 			/>
 
-			<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
-				'@context': 'https://schema.org',
-				'@type': 'Person',
-				name: 'Matías Iglesias',
-				url: 'https://main.matuteiglesias.link/',
-				jobTitle: 'Senior Data & AI Engineer',
-				sameAs: ['https://github.com/matuteiglesias', 'https://www.linkedin.com/in/matiasiglesias/']
-			}) }} />
+			<script
+				type="application/ld+json"
+				dangerouslySetInnerHTML={{
+					__html: JSON.stringify({
+						'@context': 'https://schema.org',
+						'@type': 'Person',
+						name: 'Matías Iglesias',
+						url: 'https://main.matuteiglesias.link/',
+						jobTitle: 'Senior Data & AI Engineer',
+						sameAs: ['https://github.com/matuteiglesias', 'https://www.linkedin.com/in/matiasiglesias/']
+					})
+				}}
+			/>
 
 			{/* Basic Metadata */}
 			<meta httpEquiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -71,7 +76,7 @@ const HeadTags: FC = () => {
 			<meta name="theme-color" content="#ffffff" />
 
 			{/* Optional SEO Enhancements */}
-			<meta property="og:title" content="Matías Iglesias — Senior Data & AI Engineer" />
+			<meta property="og:title" content="Matías Iglesias, Senior Data & AI Engineer" />
 			<meta
 				property="og:description"
 				content="Senior Data & AI Engineer building reliable systems for data, documents, retrieval, and automation."
@@ -81,7 +86,7 @@ const HeadTags: FC = () => {
 			<meta property="og:image" content="/icons/android-icon-192x192.png" />
 
 			<meta name="twitter:card" content="summary_large_image" />
-			<meta name="twitter:title" content="Matías Iglesias — Senior Data & AI Engineer" />
+			<meta name="twitter:title" content="Matías Iglesias, Senior Data & AI Engineer" />
 			<meta
 				name="twitter:description"
 				content="Senior Data & AI Engineer building reliable systems for data, documents, retrieval, and automation."

@@ -8,8 +8,8 @@ const isPwaEnabled = process.env.DISABLE_PWA !== '1';
 const Description =
 	'Senior Data & AI Engineer building reliable systems for data, documents, retrieval, and automation using Python, SQL, LLM APIs, RAG, BigQuery/GCP, and workflow automation.';
 const BaseUrl = 'https://main.matuteiglesias.link';
-// const Email = 'youremail@domain.com'; // Optional — comment or add your email
-const Title = 'Matías Iglesias — Senior Data & AI Engineer';
+// const Email = 'youremail@domain.com'; // Optional, comment or add your email
+const Title = 'Matías Iglesias, Senior Data & AI Engineer';
 
 const Email = 'matuteiglesias@gmail.com';
 
@@ -138,7 +138,7 @@ const config: Config = {
 			title: 'Matías Iglesias',
 			logo: {
 				alt: 'Matías Iglesias Logo',
-				src: 'icons/matias-logo32.png' // optional — replace with your logo
+				src: 'icons/matias-logo32.png' // optional, replace with your logo
 			},
 			items: [
 				{

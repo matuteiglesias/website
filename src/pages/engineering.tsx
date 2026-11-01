@@ -19,9 +19,8 @@ export default function Engineering(): JSX.Element {
 						</h1>
 						<p className={styles.intro}>
 							<Translate id="engineering.intro">
-								I build reliable systems where modern AI workflows meet strong data models, statistical reasoning and operational
-								constraints. The examples below show bounded model behavior, deterministic processing, testing and explicit authority
-								boundaries.
+								I implement AI-assisted workflows and statistical data products with explicit contracts between source records,
+								computation and release. The cases below show where models operate, how outputs are checked and who retains authority.
 							</Translate>
 						</p>
 					</header>
@@ -33,8 +32,8 @@ export default function Engineering(): JSX.Element {
 							</h2>
 							<p>
 								<Translate id="engineering.ai.intro">
-									LLM-assisted systems are software: they need contextual access, testable components, failure paths and a clear
-									human boundary around consequential output.
+									I keep generated drafts separate from durable records, make publication conditional on explicit approval, and
+									restrict agent context to named, read-only resources.
 								</Translate>
 							</p>
 						</div>
@@ -100,8 +99,8 @@ export default function Engineering(): JSX.Element {
 							</h2>
 							<p>
 								<Translate id="engineering.data.intro">
-									I work with statistical inference, numerical and computational modeling, survey methodology, uncertainty and
-									geospatial presentation—not only ETL.
+									My data work combines survey methodology, statistical inference, reproducible pipelines and geospatial delivery,
+									with explicit checks on uncertainty and model support.
 								</Translate>
 							</p>
 						</div>
@@ -165,6 +164,58 @@ export default function Engineering(): JSX.Element {
 								scoped development workflows, while retaining responsibility for design, review and release.
 							</Translate>
 						</p>
+					</section>
+
+					<section className={styles.lane}>
+						<div className={styles.laneHeader}>
+							<h2>
+								<Translate id="engineering.additional.title">Additional technical evidence</Translate>
+							</h2>
+						</div>
+						<ol className={styles.proofList}>
+							<li className={styles.card}>
+								<p>
+									<Translate id="engineering.additional.census">
+										I reconstructed dwelling, household and person records from Argentina’s 2022 Census RedatamX files and
+										verified the relationships in one census area containing 6,992 people. This is a bounded result, not a
+										completed national extraction.
+									</Translate>
+								</p>
+								<Link to="https://rxdb-extractor.matuteiglesias.workers.dev/">
+									<Translate id="engineering.additional.censusLink">Open public extractor documentation</Translate>
+								</Link>
+							</li>
+							<li className={styles.card}>
+								<p>
+									<Translate id="engineering.additional.office">
+										I built a compiler that turns a validated operating snapshot into typed work items, bounded execution packets
+										and traceable run receipts.
+									</Translate>
+								</p>
+								<Link to="https://github.com/matuteiglesias/office-auto-lab">
+									<Translate id="engineering.additional.officeLink">Inspect Office Auto Lab</Translate>
+								</Link>
+							</li>
+							<li className={styles.card}>
+								<p>
+									<Translate id="engineering.additional.thesis">
+										I directed a Licenciatura en Ciencias de Datos thesis at FCEN-UBA comparing supervised-learning models on EPH
+										household-survey income data.
+									</Translate>
+								</p>
+							</li>
+							<li className={styles.card}>
+								<p>
+									<Translate id="engineering.additional.decomposition">
+										For micro-to-macro volatility accounting, I coded exact aggregate-variance identities in Python and tested
+										signed covariances, inconsistent components and input-order invariance.
+									</Translate>
+								</p>
+								<Link to="/projects/micro-to-macro-aggregation">
+									<Translate id="engineering.additional.decompositionLink">Open the proof case</Translate>
+								</Link>
+							</li>
+						</ol>
 					</section>
 				</div>
 			</main>

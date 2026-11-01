@@ -1,15 +1,18 @@
-# Matías Iglesias — Professional Website
+# Matías Iglesias, Professional Website
 
 Source repository for Matías Iglesias's public personal and professional website.
 
 > **Lifecycle:** active public website  
 > **Authority:** published professional profile, selected projects, CV narrative, and contact surface  
-> **Not authoritative for:** complete GitHub-estate lifecycle, live status of every linked system, private work, or internal project governance  
-> **README evidence reviewed:** 2026-08-03 — package scripts, Docusaurus configuration, and home-page source; the deployed site was not rechecked
+> **Not authoritative for:** complete GitHub-estate lifecycle, live status of every linked system, private work, or
+> internal project governance  
+> **README evidence reviewed:** 2026-08-03, package scripts, Docusaurus configuration, and home-page source; the
+> deployed site was not rechecked
 
 ## Purpose
 
-This repository builds the main public website for Matías Iglesias, currently positioned around senior Data & AI engineering work.
+This repository builds the main public website for Matías Iglesias, currently positioned around senior Data & AI
+engineering work.
 
 The site is designed to provide a coherent external entrance to:
 
@@ -26,13 +29,14 @@ It is a curated public narrative, not a mirror of every repository or an automat
 
 The Docusaurus configuration declares:
 
-- **Site title:** Matías Iglesias — Senior Data & AI Engineer
+- **Site title:** Matías Iglesias, Senior Data & AI Engineer
 - **Canonical URL:** <https://main.matuteiglesias.link>
 - **Default locale:** English
 - **Additional locale:** Spanish
 - **Repository:** `matuteiglesias/website`
 
-The URL is the configured canonical target. Check the deployed site independently before asserting uptime, freshness, or successful publication.
+The URL is the configured canonical target. Check the deployed site independently before asserting uptime, freshness, or
+successful publication.
 
 ## Repository boundaries
 
@@ -54,7 +58,8 @@ The URL is the configured canonical target. Check the deployed site independentl
 - automatic truth about employment availability or project status;
 - every historical artifact in the GitHub account.
 
-Portfolio-level authority belongs in the dedicated estate control plane. When this website and an authoritative project repository disagree, verify the project and then update the public narrative.
+Portfolio-level authority belongs in the dedicated estate control plane. When this website and an authoritative project
+repository disagree, verify the project and then update the public narrative.
 
 ## Technology
 
@@ -102,21 +107,23 @@ yarn lint:md-no-fix
 yarn build
 ```
 
-Note that `yarn lint` currently includes `--fix` and may modify files. Use it deliberately rather than treating it as a read-only CI check.
+Note that `yarn lint` currently includes `--fix` and may modify files. Use it deliberately rather than treating it as a
+read-only CI check.
 
 ## Content structure
 
 The main areas are:
 
-- `src/pages/` — home and custom page entry points;
-- `src/components/` — home-page and reusable UI components;
-- `docs/` — CV, project, and supporting documentation;
-- `i18n/` — localized content and translation resources;
-- `static/` — public images, icons, and files;
-- `docusaurus.config.ts` — identity, metadata, navigation, locales, and publication settings;
-- `sidebars.ts` — documentation navigation.
+- `src/pages/`, home and custom page entry points;
+- `src/components/`, home-page and reusable UI components;
+- `docs/`, CV, project, and supporting documentation;
+- `i18n/`, localized content and translation resources;
+- `static/`, public images, icons, and files;
+- `docusaurus.config.ts`, identity, metadata, navigation, locales, and publication settings;
+- `sidebars.ts`, documentation navigation.
 
-Changes to public positioning may involve both the home-page components and documentation content. Search both languages before concluding an update is complete.
+Changes to public positioning may involve both the home-page components and documentation content. Search both languages
+before concluding an update is complete.
 
 ## Updating professional content
 
@@ -137,7 +144,9 @@ Avoid claims such as “current,” “latest,” “production,” or “automa
 
 The website should present a selective, understandable portfolio rather than enumerate the entire GitHub estate.
 
-A project belongs here when it supports the current professional narrative and has an appropriate public entrance. Historical, private, experimental, superseded, or unverified repositories should not be promoted merely because they exist.
+A project belongs here when it supports the current professional narrative and has an appropriate public entrance.
+Historical, private, experimental, superseded, or unverified repositories should not be promoted merely because they
+exist.
 
 For each highlighted project, prefer:
 
@@ -157,7 +166,8 @@ yarn pages:dev
 yarn pages:deploy
 ```
 
-`yarn pages:deploy` builds and publishes `./build` through Wrangler. It requires the appropriate Cloudflare authentication and project configuration.
+`yarn pages:deploy` builds and publishes `./build` through Wrangler. It requires the appropriate Cloudflare
+authentication and project configuration.
 
 Deployment checklist:
 
@@ -188,4 +198,6 @@ Public contact information should be intentional and reviewed, not copied from u
 
 ## Current verification boundary
 
-This README was prepared from `package.json`, `docusaurus.config.ts`, and `src/pages/index.tsx`. No dependency installation, typecheck, build, localization review, link check, Cloudflare deployment, or live-site verification was performed during this documentation-only change.
+This README was prepared from `package.json`, `docusaurus.config.ts`, and `src/pages/index.tsx`. No dependency
+installation, typecheck, build, localization review, link check, Cloudflare deployment, or live-site verification was
+performed during this documentation-only change.
