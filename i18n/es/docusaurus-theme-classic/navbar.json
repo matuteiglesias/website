@@ -17,28 +17,28 @@
 	"navbar.cv": {
 		"message": "CV"
 	},
-	"navbar.item.label.Home": {
-		"message": "Inicio"
-	},
-	"navbar.item.label.Engineering": {
-		"message": "Ingeniería"
-	},
-	"navbar.item.label.Research": {
-		"message": "Investigación"
-	},
-	"navbar.item.label.CV": {
-		"message": "CV"
-	},
-	"navbar.item.label.GitHub": {
-		"message": "GitHub"
-	},
-	"navbar.item.label.Contact": {
-		"message": "Contacto"
-	},
 	"footer.title.More": {
 		"message": "Más"
 	},
 	"footer.item.label.Selected technical notes": {
 		"message": "Notas técnicas seleccionadas"
+	},
+	"item.label.Home": {
+		"message": "Inicio"
+	},
+	"item.label.Engineering": {
+		"message": "Ingeniería"
+	},
+	"item.label.Research": {
+		"message": "Investigación"
+	},
+	"item.label.CV": {
+		"message": "CV"
+	},
+	"item.label.GitHub": {
+		"message": "GitHub"
+	},
+	"item.label.Contact": {
+		"message": "Contacto"
 	}
 }
