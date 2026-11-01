@@ -148,8 +148,13 @@ const config: Config = {
 					activeBaseRegex: '^/$'
 				},
 				{
-					to: '/docs/General/projects',
-					label: 'Projects',
+					to: '/engineering',
+					label: 'Engineering',
+					position: 'left'
+				},
+				{
+					to: '/research',
+					label: 'Research',
 					position: 'left'
 				},
 				{
@@ -180,7 +185,12 @@ const config: Config = {
 				alt: 'Matías Iglesias Logo',
 				src: 'icons/matias-logo32.png'
 			},
-			links: [], // no links needed — already featured elsewhere
+			links: [
+				{
+					title: 'More',
+					items: [{ label: 'Selected technical notes', href: 'https://journal.matuteiglesias.link' }]
+				}
+			],
 			copyright: `© ${new Date().getFullYear()} Matías Iglesias. All rights reserved.`
 		},
 		prism: {

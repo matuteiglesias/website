@@ -1,0 +1,73 @@
+.page {
+	padding: 4rem 0 5rem;
+}
+.hero {
+	max-width: 52rem;
+	margin-bottom: 3rem;
+}
+.eyebrow {
+	color: var(--ifm-color-primary);
+	font-weight: 700;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+}
+.intro {
+	font-size: 1.15rem;
+	line-height: 1.7;
+}
+.lane {
+	margin-top: 3rem;
+	scroll-margin-top: 5rem;
+}
+.laneHeader {
+	max-width: 52rem;
+	margin-bottom: 1.5rem;
+}
+.cardGrid {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 1.25rem;
+}
+.card {
+	border: 1px solid var(--ifm-color-emphasis-300);
+	border-radius: 12px;
+	padding: 1.35rem;
+	background: var(--ifm-card-background-color);
+	height: 100%;
+}
+.card h3 {
+	margin-top: 0;
+}
+.meta {
+	color: var(--ifm-color-emphasis-700);
+	font-size: 0.9rem;
+}
+.links {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+	margin-top: 1.25rem;
+}
+.methods {
+	margin-top: 3rem;
+	padding: 1.5rem;
+	border-left: 3px solid var(--ifm-color-primary);
+	background: var(--ifm-background-surface-color);
+}
+.methods h2 {
+	margin-top: 0;
+}
+.status {
+	font-size: 0.85rem;
+	font-weight: 700;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+}
+@media screen and (max-width: 700px) {
+	.page {
+		padding: 2.5rem 0 3rem;
+	}
+	.cardGrid {
+		grid-template-columns: 1fr;
+	}
+}

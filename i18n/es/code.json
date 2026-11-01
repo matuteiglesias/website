@@ -9,22 +9,22 @@
 		"message": "Sistemas confiables para datos, documentos, recuperación de información y automatización."
 	},
 	"homepage.description2": {
-		"message": "Construyo sistemas en Python/SQL que convierten información desordenada en infraestructura usable: pipelines de datos, workflows de procesamiento documental, sistemas de recuperación, dashboards y herramientas de automatización asistidas por IA."
+		"message": "Diseño y construyo software confiable para flujos de IA, documentos y datos complejos, desde la ingesta y validación hasta la entrega controlada."
 	},
 	"homepage.intro.background": {
-		"message": "Mi trabajo combina ingeniería de software/datos con formación científica en economía y física. Soy más fuerte en problemas donde datos, software, criterio analítico y utilidad operativa tienen que encontrarse."
+		"message": "Mi formación en economía y física, junto con mi experiencia institucional, aporta criterio para pensar la medición, la confiabilidad y las restricciones reales."
 	},
-	"homepage.cta.projects": {
-		"message": "Ver proyectos seleccionados"
+	"homepage.cta.engineering": {
+		"message": "Explorar Ingeniería"
 	},
 	"homepage.cta.cv": {
 		"message": "Ver CV"
 	},
-	"homepage.secondary.journal": {
-		"message": "Journal técnico / build log"
+	"homepage.secondary.research": {
+		"message": "Investigación"
 	},
-	"homepage.secondary.thesis": {
-		"message": "Tesis / investigación"
+	"homepage.secondary.contact": {
+		"message": "Contacto"
 	},
 	"features.build.title": {
 		"message": "Qué construyo"
@@ -54,10 +54,10 @@
 		"message": "Tesis doctoral y trayectoria de investigación"
 	},
 	"features.projects.title": {
-		"message": "Proyectos seleccionados"
+		"message": "Cuatro pruebas de trabajo"
 	},
 	"features.projects.media.desc": {
-		"message": "Un sistema desplegado y gobernado de inteligencia de noticias y publicación editorial, desde ingesta y contratos versionados hasta publicación con gate humano, health de frescura y despliegue programado."
+		"message": "Un flujo de noticias asistido por IA, con contratos de datos versionados, pruebas deterministas y un límite explícito de publicación."
 	},
 	"features.projects.media.bullet1": {
 		"message": "ingesta inmutable e índices deterministas"
@@ -72,7 +72,7 @@
 		"message": "workflow de despliegue con control de frescura"
 	},
 	"features.projects.media.link": {
-		"message": "Ver cápsula de prueba"
+		"message": "Caso"
 	},
 	"features.projects.contracts.desc": {
 		"message": "Una capa de contratos para hacer que los workflows de IA y conocimiento sean inspeccionables, testeables y mantenibles entre repositorios."
@@ -93,7 +93,7 @@
 		"message": "Ver cápsula de prueba"
 	},
 	"features.projects.publicData.desc": {
-		"message": "Un sistema versionado que conecta encuestas de hogares, microdatos censales, validación y modelado predictivo con un atlas geográfico público."
+		"message": "Un sistema de medición que conecta encuestas y geografía mediante validación y reglas explícitas de publicación."
 	},
 	"features.projects.publicData.bullet1": {
 		"message": "pipelines de encuestas y censos"
@@ -108,12 +108,339 @@
 		"message": "mapas públicos y estimaciones trazables"
 	},
 	"features.projects.publicData.link": {
-		"message": "Ver cápsula de prueba"
+		"message": "Caso"
 	},
 	"features.seniority.title": {
-		"message": "Experiencia e instituciones"
+		"message": "Trayectoria"
 	},
 	"features.seniority.items": {
-		"message": "Consultoría independiente · Provincia de Buenos Aires · Banco Mundial · Harvard Growth Lab · UBA · PhD en Economía · MSc en Física"
+		"message": "Ingeniería y consultoría independiente · trabajo de datos en el sector público · consultoría para el Banco Mundial · PhD en Economía · MSc en Física"
+	},
+	"features.projects.ai.label": {
+		"message": "Workflow de IA"
+	},
+	"features.projects.data.label": {
+		"message": "Sistema de datos"
+	},
+	"features.projects.code": {
+		"message": "Código"
+	},
+	"features.projects.media.title": {
+		"message": "Media Monitor"
+	},
+	"features.projects.media.status": {
+		"message": "Sistema público · health check disponible"
+	},
+	"features.projects.mcp.title": {
+		"message": "Matías Context MCP"
+	},
+	"features.projects.mcp.desc": {
+		"message": "Una pasarela MCP local y de solo lectura que expone contexto gobernado mediante recursos acotados y trazables."
+	},
+	"features.projects.mcp.status": {
+		"message": "Implementación local · código y tests"
+	},
+	"features.projects.mcp.link": {
+		"message": "Caso"
+	},
+	"features.projects.accounting.title": {
+		"message": "Accounting Workflows"
+	},
+	"features.projects.accounting.desc": {
+		"message": "Un pipeline en Python que transforma registros de origen en vistas financieras reproducibles e informes controlados, con repetición por ejecución exacta."
+	},
+	"features.projects.accounting.status": {
+		"message": "Pipeline implementado · evidencia sanitizada"
+	},
+	"features.projects.accounting.link": {
+		"message": "Caso"
+	},
+	"features.projects.publicData.title": {
+		"message": "Medición de pobreza y Atlas de Argentina"
+	},
+	"features.projects.publicData.status": {
+		"message": "Infraestructura de investigación · aplica el alcance de cada release"
+	},
+	"features.methods.title": {
+		"message": "Cómo trabajo"
+	},
+	"features.methods.body": {
+		"message": "Parto del modelo de datos, de la decisión que el sistema debe apoyar y de los límites entre fuentes, cómputo y autoridad. Prefiero interfaces simples y verificables; procesamiento determinista cuando corresponde; comportamiento acotado de modelos o agentes cuando hace falta; y pruebas, trazabilidad y recuperación explícitas."
+	},
+	"features.methods.link": {
+		"message": "Leer el enfoque de ingeniería"
+	},
+	"features.research.title": {
+		"message": "Investigación"
+	},
+	"features.research.body": {
+		"message": "Un programa de investigación independiente sobre agregación, heterogeneidad, volatilidad y medición espacial, con un artículo revisado por pares de 2021 y manuscritos y trabajos aplicados en curso."
+	},
+	"features.research.link": {
+		"message": "Explorar investigación"
+	},
+	"engineering.eyebrow": {
+		"message": "Portfolio de ingeniería"
+	},
+	"engineering.title": {
+		"message": "Ingeniería de IA y datos"
+	},
+	"engineering.description": {
+		"message": "Sistemas de IA, datos y medición con evidencia inspectable."
+	},
+	"engineering.intro": {
+		"message": "Construyo sistemas confiables donde los workflows modernos de IA se encuentran con modelos de datos sólidos, razonamiento estadístico y restricciones operativas. Los ejemplos muestran comportamiento acotado de modelos, procesamiento determinista, pruebas y límites explícitos de autoridad."
+	},
+	"engineering.ai.title": {
+		"message": "Sistemas de IA y agentes"
+	},
+	"engineering.ai.intro": {
+		"message": "Los sistemas asistidos por LLM son software: necesitan acceso contextual, componentes testeables, caminos de falla y un límite humano claro alrededor de los resultados con consecuencias."
+	},
+	"engineering.media.title": {
+		"message": "Media Monitor"
+	},
+	"engineering.media.body": {
+		"message": "Un workflow de noticias gobernado de punta a punta, con ingesta, contratos versionados, integración de modelos, pruebas deterministas, ramas de revisión y un gate humano explícito de publicación."
+	},
+	"engineering.media.evidence": {
+		"message": "Evidencia: implementación, tests y contrato público de health."
+	},
+	"engineering.mcp.title": {
+		"message": "Matías Context MCP"
+	},
+	"engineering.mcp.body": {
+		"message": "Una pasarela local de recursos de solo lectura con lecturas acotadas UTF-8/JSON, preflight de inicio, fuentes nombradas, hashes de procedencia y protección contra escapes de path y symlinks."
+	},
+	"engineering.mcp.status": {
+		"message": "Implementación local · no es una plataforma de agentes hosted"
+	},
+	"engineering.data.title": {
+		"message": "Datos, medición y sistemas de decisión"
+	},
+	"engineering.data.intro": {
+		"message": "Trabajo con inferencia estadística, modelado numérico y computacional, metodología de encuestas, incertidumbre y presentación geoespacial; no solamente ETL."
+	},
+	"engineering.accounting.title": {
+		"message": "Accounting Workflows"
+	},
+	"engineering.accounting.body": {
+		"message": "Un pipeline en Python para ingesta, materialización canónica, marts semánticos, reportes gobernados, validación y replay por ejecución exacta. La explicación pública usa evidencia sanitizada y preserva un límite de privacidad."
+	},
+	"engineering.accounting.status": {
+		"message": "Pipeline implementado · sin claims de clientes ni certificación"
+	},
+	"engineering.poverty.title": {
+		"message": "Medición de pobreza y Atlas de Argentina"
+	},
+	"engineering.poverty.body": {
+		"message": "Un pipeline estadístico-geoespacial gobernado de encuestas a censo, con alineación semántica, checks de soporte del modelo, estimandos explícitos y límites entre producción científica y presentación pública."
+	},
+	"engineering.poverty.status": {
+		"message": "Infraestructura de investigación · aplica el alcance de cada release"
+	},
+	"engineering.case": {
+		"message": "Caso"
+	},
+	"engineering.code": {
+		"message": "Código"
+	},
+	"engineering.kb": {
+		"message": "Patrón de apoyo: "
+	},
+	"engineering.kb.link": {
+		"message": "Knowledge / Data Contracts"
+	},
+	"engineering.kb.end": {
+		"message": ", una referencia pública de arquitectura, no una implementación flagship."
+	},
+	"engineering.methods.title": {
+		"message": "Métodos de ingeniería"
+	},
+	"engineering.methods.body": {
+		"message": "Parto del modelo de datos, de la decisión que el sistema debe apoyar y de los límites entre fuentes, cómputo y autoridad. Prefiero interfaces simples y verificables; procesamiento determinista cuando corresponde; comportamiento acotado de modelos o agentes cuando hace falta; y pruebas, trazabilidad y recuperación explícitas. Utilizo agentes de programación en tareas delimitadas, manteniendo la responsabilidad por el diseño, la revisión y la publicación."
+	},
+	"research.eyebrow": {
+		"message": "Programa de investigación"
+	},
+	"research.title": {
+		"message": "Investigación"
+	},
+	"research.description": {
+		"message": "Investigación independiente sobre agregación, medición y geografía económica."
+	},
+	"research.identity": {
+		"message": "Desarrollo un programa de investigación independiente sobre cómo la agregación, la heterogeneidad, la volatilidad, la normalización y el soporte espacial transforman las cantidades económicas y las decisiones."
+	},
+	"research.question.title": {
+		"message": "Pregunta central"
+	},
+	"research.question.body": {
+		"message": "¿Qué cambia cuando las observaciones se agrupan, ponderan, normalizan o ubican en el espacio, y qué conclusiones sobreviven a esas transformaciones?"
+	},
+	"research.pillar.aggregation": {
+		"message": "Agregación, heterogeneidad y volatilidad"
+	},
+	"research.pillar.aggregation.body": {
+		"message": "El eje central: entender cómo las distribuciones, la composición y la variación temporal afectan los indicadores agregados."
+	},
+	"research.pillar.lq": {
+		"message": "Especialización y cocientes de localización"
+	},
+	"research.pillar.lq.body": {
+		"message": "Medición de la especialización bajo muestras finitas, estructura probabilística y distorsiones asociadas al tamaño."
+	},
+	"research.pillar.geo": {
+		"message": "Correlaciones geográficas y soporte espacial"
+	},
+	"research.pillar.geo.body": {
+		"message": "Cómo la normalización, la geografía y el soporte afectan las correlaciones y su interpretación en datos económicos."
+	},
+	"research.outputs.title": {
+		"message": "Resultados seleccionados"
+	},
+	"research.status.published": {
+		"message": "Publicado con revisión por pares"
+	},
+	"research.lq.title": {
+		"message": "Measuring Size Distortions of Location Quotients"
+	},
+	"research.lq.body": {
+		"message": "International Economics, 2021. Estudio revisado por pares sobre distorsiones de tamaño en cocientes de localización."
+	},
+	"research.doi": {
+		"message": "Leer el registro DOI"
+	},
+	"research.status.thesis": {
+		"message": "Tesis doctoral"
+	},
+	"research.thesis.title": {
+		"message": "Essays in the Economics of Aggregation"
+	},
+	"research.thesis.body": {
+		"message": "La tesis doctoral es un resultado académico separado, no una publicación adicional de revista."
+	},
+	"research.status.manuscript": {
+		"message": "Manuscrito actual"
+	},
+	"research.manuscript.title": {
+		"message": "Concentration Is Not Scaling"
+	},
+	"research.manuscript.body": {
+		"message": "Un manuscrito actual con trabajo formal y empírico sobre agregación. No se presenta como preprint de arXiv ni como publicación de revista."
+	},
+	"research.status.working": {
+		"message": "Documento de trabajo"
+	},
+	"research.geo.title": {
+		"message": "The Overlooked Insights from Correlation Structures in Economic Geography"
+	},
+	"research.geo.body": {
+		"message": "Un documento de trabajo de 2021 sobre estructuras de correlación geográfica, distinto del artículo revisado por pares sobre LQ."
+	},
+	"research.applied.title": {
+		"message": "Trabajo aplicado y computacional"
+	},
+	"research.status.progress": {
+		"message": "Investigación en curso"
+	},
+	"research.poverty.title": {
+		"message": "Medición de pobreza"
+	},
+	"research.poverty.body": {
+		"message": "Trabajo de medición de encuestas y geografía con límites explícitos de incertidumbre, interpretación y validez externa."
+	},
+	"research.engineering": {
+		"message": "Ver la evidencia de ingeniería"
+	},
+	"research.status.software": {
+		"message": "Software / artefacto de investigación"
+	},
+	"research.abm.title": {
+		"message": "Revival de un modelo basado en agentes inspirado en K+S"
+	},
+	"research.abm.body": {
+		"message": "Una reconstrucción computacional con evidencia de software acotada; la equivalencia del modelo, la calibración y la validez científica siguen abiertas."
+	},
+	"research.methods.title": {
+		"message": "Métodos y trayectoria académica"
+	},
+	"research.methods.body": {
+		"message": "El programa combina derivación analítica, simulación, medición estadística, computación reproducible y una separación cuidadosa entre estimandos, evidencia e interpretación."
+	},
+	"research.methods.portalIntro": {
+		"message": "El portal de investigación reúne la tesis y materiales relacionados."
+	},
+	"research.methods.portal": {
+		"message": "Explorar el programa completo"
+	},
+	"project.eyebrow": {
+		"message": "Cápsula de evidencia"
+	},
+	"project.problem": {
+		"message": "Problema"
+	},
+	"project.built": {
+		"message": "Qué construí"
+	},
+	"project.role": {
+		"message": "Mi rol y ownership"
+	},
+	"project.decisions": {
+		"message": "Decisiones clave"
+	},
+	"project.tradeoff": {
+		"message": "Tradeoff:"
+	},
+	"project.reliability": {
+		"message": "Confiabilidad y testing"
+	},
+	"project.recovery": {
+		"message": "Recuperación:"
+	},
+	"project.proves": {
+		"message": "Qué demuestra"
+	},
+	"project.principles": {
+		"message": "Principios clave"
+	},
+	"project.boundaries": {
+		"message": "Límites de módulos"
+	},
+	"project.context": {
+		"message": "Usuarios y contexto"
+	},
+	"project.deployment": {
+		"message": "Deployment:"
+	},
+	"project.flow": {
+		"message": "Flujo del sistema"
+	},
+	"project.stack": {
+		"message": "Stack"
+	},
+	"project.evidence": {
+		"message": "Evidencia"
+	},
+	"project.status": {
+		"message": "Estado y límites"
+	},
+	"project.limitations": {
+		"message": "Limitaciones"
+	},
+	"project.evidence.verified": {
+		"message": "Link verificado"
+	},
+	"project.evidence.defined": {
+		"message": "Test definido"
+	},
+	"project.evidence.check": {
+		"message": "Comprobar estado actual"
+	},
+	"project.evidence.limited": {
+		"message": "Alcance limitado"
+	},
+	"project.evidence.missing": {
+		"message": "Sin link"
 	}
 }

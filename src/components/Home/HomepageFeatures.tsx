@@ -1,146 +1,160 @@
 import Link from '@docusaurus/Link';
+import Translate from '@docusaurus/Translate';
 import type { FC } from 'react';
 import styles from './HomepageFeatures.module.css';
 
-import Translate from '@docusaurus/Translate';
+const ProjectCard = ({
+	category,
+	title,
+	description,
+	status,
+	caseHref,
+	codeHref,
+	titleId,
+	descriptionId,
+	statusId,
+	caseId
+}: {
+	category: 'ai' | 'data';
+	title: string;
+	description: string;
+	status: string;
+	caseHref: string;
+	codeHref: string;
+	titleId: string;
+	descriptionId: string;
+	statusId: string;
+	caseId: string;
+}): JSX.Element => (
+	<article className={styles.projectCard}>
+		<p className={styles.category}>
+			<Translate id={`features.projects.${category}.label`}>{category === 'ai' ? 'AI workflow' : 'Data system'}</Translate>
+		</p>
+		<h3>
+			<Translate id={titleId}>{title}</Translate>
+		</h3>
+		<p>
+			<Translate id={descriptionId}>{description}</Translate>
+		</p>
+		<p className={styles.status}>
+			<Translate id={statusId}>{status}</Translate>
+		</p>
+		<div className={styles.projectLinks}>
+			<Link to={caseHref}>
+				<Translate id={caseId}>Case study</Translate>
+			</Link>
+			<Link to={codeHref}>
+				<Translate id="features.projects.code">Code</Translate>
+			</Link>
+		</div>
+	</article>
+);
 
 const HomePageFeatures: FC = () => (
 	<main className={styles.features}>
 		<section className="container">
-			<div className={styles.sectionGrid}>
-				<div>
-					<h2>
-						<Translate id="features.build.title">What I build</Translate>
-					</h2>
-					<ul className={styles.checkList}>
-						<li>
-							<Translate id="features.build.li1">Data pipelines and structured datasets</Translate>
-						</li>
-						<li>
-							<Translate id="features.build.li2">RAG and document-processing workflows</Translate>
-						</li>
-						<li>
-							<Translate id="features.build.li3">Automation layers for repeated operational work</Translate>
-						</li>
-						<li>
-							<Translate id="features.build.li4">Dashboards and decision surfaces</Translate>
-						</li>
-						<li>
-							<Translate id="features.build.li5">Validation, contracts, and reproducible workflows</Translate>
-						</li>
-					</ul>
-				</div>
-
-				<div>
-					<h2>
-						<Translate id="features.links.title">Background links</Translate>
-					</h2>
-					<p>
-						<Link to="https://journal.matuteiglesias.link">
-							<Translate id="features.links.journal">Developer journal / build log</Translate>
-						</Link>
-					</p>
-					<p>
-						<Link to="https://thesis.matuteiglesias.link">
-							<Translate id="features.links.thesis">PhD thesis and research background</Translate>
-						</Link>
-					</p>
-					<p>
-						<Link to="https://kb-contracts.matuteiglesias.link">KB Contracts reference architecture</Link>
-					</p>
-				</div>
-			</div>
-		</section>
-
-		<section className="container">
 			<div className={styles.institutionalStrip}>
-				<div><strong><Translate id="features.seniority.title">Experience &amp; institutions</Translate></strong></div>
-				<div><Translate id="features.seniority.items">Independent consulting · Buenos Aires Province · World Bank · Harvard Growth Lab · UBA · PhD Economics · MSc Physics</Translate></div>
+				<div>
+					<strong>
+						<Translate id="features.seniority.title">Background</Translate>
+					</strong>
+				</div>
+				<div>
+					<Translate id="features.seniority.items">
+						Independent engineering and consulting · public-sector data work · World Bank consulting · PhD Economics · MSc Physics
+					</Translate>
+				</div>
 			</div>
 		</section>
 
 		<section className="container">
 			<h2 id="selected-projects">
-				<Translate id="features.projects.title">Selected projects</Translate>
+				<Translate id="features.projects.title">Four proof points</Translate>
 			</h2>
 			<div className={styles.projectGrid}>
-				<article className={styles.projectCard}>
-					<h3>Media Monitor</h3>
-					<p>
-						<Translate id="features.projects.media.desc">
-							A deployed governed news-intelligence and editorial publishing system, from source ingestion and versioned contracts to human-gated publication, freshness health, and scheduled deployment.
-						</Translate>
-					</p>
-					<ul>
-						<li>
-							<Translate id="features.projects.media.bullet1">immutable ingestion and deterministic indexes</Translate>
-						</li>
-						<li>
-							<Translate id="features.projects.media.bullet2">versioned contracts and validation</Translate>
-						</li>
-						<li>
-							<Translate id="features.projects.media.bullet3">explicit human publication gate</Translate>
-						</li>
-						<li>
-							<Translate id="features.projects.media.bullet4">freshness-checked deployment workflow</Translate>
-						</li>
-					</ul>
-					<div className={styles.projectLinks}><Link to="/projects/media-monitor">
-						<Translate id="features.projects.media.link">View proof capsule</Translate>
-					</Link><Link to="https://github.com/matuteiglesias/media_monitor">Code</Link><Link to="https://mediamonitor-psi.vercel.app">Live</Link></div>
-				</article>
+				<ProjectCard
+					category="ai"
+					title="Media Monitor"
+					description="A governed AI-assisted news workflow with versioned data contracts, deterministic tests and an explicit publication boundary."
+					status="Public system · runtime health linked"
+					caseHref="/projects/media-monitor"
+					codeHref="https://github.com/matuteiglesias/media_monitor"
+					titleId="features.projects.media.title"
+					descriptionId="features.projects.media.desc"
+					statusId="features.projects.media.status"
+					caseId="features.projects.media.link"
+				/>
+				<ProjectCard
+					category="ai"
+					title="Matías Context MCP"
+					description="A local, read-only MCP gateway exposing governed context as bounded, provenance-rich resources."
+					status="Local implementation · code and tests"
+					caseHref="/projects/matias-context-mcp"
+					codeHref="https://github.com/matuteiglesias/matias-context-mcp"
+					titleId="features.projects.mcp.title"
+					descriptionId="features.projects.mcp.desc"
+					statusId="features.projects.mcp.status"
+					caseId="features.projects.mcp.link"
+				/>
+				<ProjectCard
+					category="data"
+					title="Accounting Workflows"
+					description="A Python pipeline that turns source records into reproducible financial views and controlled reports, with exact-run replay."
+					status="Implemented pipeline · sanitized evidence"
+					caseHref="/projects/accounting-workflows"
+					codeHref="https://github.com/matuteiglesias/accounting-workflows"
+					titleId="features.projects.accounting.title"
+					descriptionId="features.projects.accounting.desc"
+					statusId="features.projects.accounting.status"
+					caseId="features.projects.accounting.link"
+				/>
+				<ProjectCard
+					category="data"
+					title="Argentina Poverty Measurement & Atlas"
+					description="A governed survey-to-geography measurement system with explicit validation and release boundaries."
+					status="Research-grade infrastructure · release scope applies"
+					caseHref="/projects/public-data-poverty-eph"
+					codeHref="https://github.com/matuteiglesias/argentina-poverty-atlas"
+					titleId="features.projects.publicData.title"
+					descriptionId="features.projects.publicData.desc"
+					statusId="features.projects.publicData.status"
+					caseId="features.projects.publicData.link"
+				/>
+			</div>
+		</section>
 
-				<article className={styles.projectCard}>
-					<h3>Knowledge / Data Contracts</h3>
-					<p>
-						<Translate id="features.projects.contracts.desc">
-							A contracts layer for making AI and knowledge workflows inspectable, testable, and maintainable across repositories.
-						</Translate>
-					</p>
-					<ul>
-						<li>
-							<Translate id="features.projects.contracts.bullet1">schemas</Translate>
-						</li>
-						<li>
-							<Translate id="features.projects.contracts.bullet2">run records</Translate>
-						</li>
-						<li>
-							<Translate id="features.projects.contracts.bullet3">integration seams</Translate>
-						</li>
-						<li>
-							<Translate id="features.projects.contracts.bullet4">smoke tests</Translate>
-						</li>
-					</ul>
-					<div className={styles.projectLinks}><Link to="/projects/kb-contracts">
-						<Translate id="features.projects.contracts.link">View proof capsule</Translate>
-					</Link><Link to="https://github.com/matuteiglesias/kb-contracts">Code</Link></div>
-				</article>
+		<section className="container">
+			<div className={styles.methodNote}>
+				<h2>
+					<Translate id="features.methods.title">How I engineer</Translate>
+				</h2>
+				<p>
+					<Translate id="features.methods.body">
+						I start from the data model, the decision that a system must support, and the boundaries between sources, computation and
+						authority. I favor simple, inspectable interfaces; deterministic processing where possible; bounded model or agent behavior
+						where needed; and explicit tests, provenance and recovery paths.
+					</Translate>
+				</p>
+				<Link to="/engineering">
+					<Translate id="features.methods.link">Read the engineering approach</Translate>
+				</Link>
+			</div>
+		</section>
 
-				<article className={styles.projectCard}>
-					<h3>Argentina Poverty Measurement &amp; Atlas</h3>
-					<p>
-						<Translate id="features.projects.publicData.desc">
-							A versioned data system connecting household surveys, census microdata, validation and predictive modeling to a public geographic atlas.
-						</Translate>
-					</p>
-					<ul>
-						<li>
-							<Translate id="features.projects.publicData.bullet1">survey and census data pipelines</Translate>
-						</li>
-						<li>
-							<Translate id="features.projects.publicData.bullet2">semantic alignment and data contracts</Translate>
-						</li>
-						<li>
-							<Translate id="features.projects.publicData.bullet3">commissioning and release validation</Translate>
-						</li>
-						<li>
-							<Translate id="features.projects.publicData.bullet4">public maps and traceable estimates</Translate>
-						</li>
-					</ul>
-					<div className={styles.projectLinks}><Link to="/projects/public-data-poverty-eph">
-						<Translate id="features.projects.publicData.link">View proof capsule</Translate>
-					</Link><Link to="https://github.com/matuteiglesias/argentina-poverty-atlas">Code</Link><Link to="https://pobreza-argentina.vercel.app">Live</Link></div>
-				</article>
+		<section className="container">
+			<div className={styles.researchTeaser}>
+				<h2>
+					<Translate id="features.research.title">Research</Translate>
+				</h2>
+				<p>
+					<Translate id="features.research.body">
+						An independent research programme on aggregation, heterogeneity, volatility and spatial measurement, including a 2021
+						peer-reviewed paper and current manuscripts and applied work in progress.
+					</Translate>
+				</p>
+				<Link to="/research">
+					<Translate id="features.research.link">Explore research</Translate>
+				</Link>
 			</div>
 		</section>
 	</main>

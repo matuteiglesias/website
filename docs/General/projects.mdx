@@ -1,91 +1,14 @@
 ---
-title: Selected Projects
+title: Selected engineering projects
 sidebar_position: 5
-description: Three proof capsules showing Matías Iglesias' AI, data, and public-data systems work.
-tags: ['Projects', 'AI Engineering', 'Data Systems', 'Public Data']
+description: Four evidence-backed AI and data engineering cases.
 ---
 
-import SimpleLink from '@site/src/components/Docs/SimpleLink';
+# Selected engineering projects
 
-# Selected Projects
+Explore [Engineering](/engineering), or open a case directly: [Media Monitor](/projects/media-monitor),
+[Matías Context MCP](/projects/matias-context-mcp), [Accounting Workflows](/projects/accounting-workflows), or
+[Argentina Poverty Measurement & Atlas](/projects/public-data-poverty-eph).
 
-These proof capsules summarize the three project areas I currently use to show applied AI engineering, data-system
-architecture, and research-grade public-data work. Evidence is marked conservatively: if a public artifact still needs
-sanitization or review, it is listed as **Evidence pending review** instead of linked.
-
-## 1. Media Monitor
-
-**Role signal:** Deployed governed news-intelligence and editorial publishing system.
-
-**Brief:** A governed Argentina-focused system that runs from monitored-source ingestion through immutable run artifacts,
-versioned contracts, deterministic indexes, AI-assisted briefs/drafts, an explicit human publication gate,
-publication-aware deployment snapshots, request-time freshness health, and guarded scheduled deployment.
-
-**What it proves**
-
-- I can design inspectable AI/data workflows across ingestion, enrichment, editorial generation, publication authority,
-  and deployment boundaries.
-- I can keep generated drafts separate from durable contract buses and from the explicit human authority required to
-  create public editorial content.
-- I can make deployment/currentness observable through deterministic snapshots, public health, freshness policy, and
-  pre/post-deploy guards instead of equating “has a URL” with “live.”
-
-**Evidence**
-
-- [Canonical public outlet](https://mediamonitor-psi.vercel.app).
-- [Public freshness / deployment health](https://mediamonitor-psi.vercel.app/api/health).
-- [Documentation and architecture map](https://github.com/matuteiglesias/media_monitor/tree/main/docs).
-- [Source repository](https://github.com/matuteiglesias/media_monitor).
-- [Explicit human publication gate](https://github.com/matuteiglesias/media_monitor/blob/main/scripts/promote_draft_to_published.py).
-- [Publication-aware `site_snapshot.v2` contract](https://github.com/matuteiglesias/media_monitor/blob/main/contracts/schemas/site_snapshot.v2.json).
-- [Scheduled guarded public refresh](https://github.com/matuteiglesias/media_monitor/blob/main/.github/workflows/scheduled-publication.yml).
-- [Runtime contract evidence](https://github.com/matuteiglesias/media_monitor/actions/runs/32770941754).
-- [C3 editorial rehearsal / human-gate readiness](https://github.com/matuteiglesias/media_monitor/pull/64).
-
-A representative Media Monitor editorial article is deliberately **not** linked yet. C3 exercised the real promotion and
-indexing machinery in isolation without manufacturing `human_approved`; the first article belongs here only after an
-explicit human publication decision.
-
-<SimpleLink href="/projects/media-monitor" linkName="Open Media Monitor proof capsule" />
-
-## 2. Knowledge / Data Contracts
-
-**Role signal:** Reliability architecture for AI/knowledge pipelines.
-
-**Brief:** A contract architecture for making AI and knowledge pipelines inspectable, testable, maintainable, and safer
-to extend across producers, versioned buses, manifests, observability indexes, and sanctioned consumers.
-
-**What it proves**
-
-- I can design reliability layers that keep multi-repo AI/data pipelines inspectable and safe to extend.
-- I can define boundaries, contracts, observability, versioning, integration governance, and failure containment.
-- I can turn knowledge-system architecture into explicit rules rather than hidden coupling between folders and scripts.
-
-**Evidence**
-
-- [Public technical overview](/docs/General/tech).
-- Evidence pending review: integration seams page.
-- Evidence pending review: run record and observability index contracts.
-
-<SimpleLink href="/projects/kb-contracts" linkName="Open Knowledge / Data Contracts proof capsule" />
-
-## 3. Argentina Poverty Measurement & Atlas
-
-**Role signal:** End-to-end data engineering, validation, modeling, and public data product.
-
-**Brief:** A versioned system connecting EPH household surveys, Census microdata, semantic alignment, person-level income modeling, commissioning checks, governed releases, and a public geographic atlas.
-
-**What it proves**
-
-- I can apply research-grade analytical judgment to public socioeconomic data rather than only moving JSON artifacts.
-- I can build reproducible paths from survey microdata to indicators, geospatial analysis, and human-facing outputs.
-- I can translate economic research into inspectable maps, charts, tables, and documentation for public audiences.
-
-**Evidence**
-
-- [Public Atlas](https://pobreza-argentina.vercel.app).
-- [Atlas frontend](https://github.com/matuteiglesias/argentina-poverty-atlas).
-- [Measurement producer](https://github.com/matuteiglesias/indice-pobreza-UBA).
-- [Survey/Census semantic aligner](https://github.com/matuteiglesias/eph-censo-aligner).
-
-<SimpleLink href="/projects/public-data-poverty-eph" linkName="Open Public Data / Poverty & EPH proof capsule" />
+Each case identifies implemented behavior, evidence links, engineering decisions and limitations. See
+[Research](/research) for scientific status.

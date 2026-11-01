@@ -4,5 +4,13 @@
 	"navbar.projects": { "message": "Projects" },
 	"navbar.tech": { "message": "Tech" },
 	"navbar.civic": { "message": "Civic" },
-	"navbar.cv": { "message": "CV" }
+	"navbar.cv": { "message": "CV" },
+	"navbar.item.label.Home": { "message": "Home" },
+	"navbar.item.label.Engineering": { "message": "Engineering" },
+	"navbar.item.label.Research": { "message": "Research" },
+	"navbar.item.label.CV": { "message": "CV" },
+	"navbar.item.label.GitHub": { "message": "GitHub" },
+	"navbar.item.label.Contact": { "message": "Contact" },
+	"footer.title.More": { "message": "More" },
+	"footer.item.label.Selected technical notes": { "message": "Selected technical notes" }
 }

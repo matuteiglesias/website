@@ -25,37 +25,33 @@ const HomePageHeader: FC = () => {
 
 				<p className={styles.description}>
 					<Translate id="homepage.description2">
-						I build Python/SQL systems that turn messy information into usable infrastructure: data pipelines, document-processing
-						workflows, retrieval systems, dashboards, and AI-assisted automation tools.
+						I design and build reliable software for AI workflows, documents and complex data—from ingestion and validation to controlled
+						delivery.
 					</Translate>
 				</p>
 
 				<p className={styles.description}>
 					<Translate id="homepage.intro.background">
-						My background combines software/data engineering with scientific training in economics and physics. I’m strongest where data,
-						software, research judgment, and operational usefulness need to meet.
+						My background in economics and physics, together with institutional work, helps me reason about measurement, reliability and
+						real-world constraints.
 					</Translate>
 				</p>
 
 				<div className={styles.ctaGroup} aria-label="Primary links">
-					<Link className="button button--primary button--lg" to="/docs/General/projects">
-						<Translate id="homepage.cta.projects">View selected projects</Translate>
+					<Link className="button button--primary button--lg" to="/engineering">
+						<Translate id="homepage.cta.engineering">Explore Engineering</Translate>
 					</Link>
 					<Link className="button button--secondary button--lg" to="/docs/General/cv">
 						<Translate id="homepage.cta.cv">Read CV</Translate>
 					</Link>
-					<Link className="button button--secondary button--lg" to="https://github.com/matuteiglesias">
-						GitHub
-					</Link>
 				</div>
 
 				<div className={styles.secondaryLinks} aria-label="Secondary links">
-					<Link to="https://www.linkedin.com/in/matiasiglesias/">LinkedIn</Link>
-					<Link to="https://journal.matuteiglesias.link">
-						<Translate id="homepage.secondary.journal">Developer Journal / Build Log</Translate>
+					<Link to="/research">
+						<Translate id="homepage.secondary.research">Research</Translate>
 					</Link>
-					<Link to="https://thesis.matuteiglesias.link">
-						<Translate id="homepage.secondary.thesis">Thesis and research background</Translate>
+					<Link to="mailto:matuteiglesias@gmail.com">
+						<Translate id="homepage.secondary.contact">Contact</Translate>
 					</Link>
 				</div>
 			</div>

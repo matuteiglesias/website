@@ -1,8 +1,44 @@
 {
-	"navbar.docs": { "message": "Documentación" },
-	"navbar.home": { "message": "Inicio" },
-	"navbar.projects": { "message": "Proyectos" },
-	"navbar.tech": { "message": "Tecnología" },
-	"navbar.civic": { "message": "Cívico" },
-	"navbar.cv": { "message": "CV" }
+	"navbar.docs": {
+		"message": "Documentación"
+	},
+	"navbar.home": {
+		"message": "Inicio"
+	},
+	"navbar.projects": {
+		"message": "Proyectos"
+	},
+	"navbar.tech": {
+		"message": "Tecnología"
+	},
+	"navbar.civic": {
+		"message": "Cívico"
+	},
+	"navbar.cv": {
+		"message": "CV"
+	},
+	"navbar.item.label.Home": {
+		"message": "Inicio"
+	},
+	"navbar.item.label.Engineering": {
+		"message": "Ingeniería"
+	},
+	"navbar.item.label.Research": {
+		"message": "Investigación"
+	},
+	"navbar.item.label.CV": {
+		"message": "CV"
+	},
+	"navbar.item.label.GitHub": {
+		"message": "GitHub"
+	},
+	"navbar.item.label.Contact": {
+		"message": "Contacto"
+	},
+	"footer.title.More": {
+		"message": "Más"
+	},
+	"footer.item.label.Selected technical notes": {
+		"message": "Notas técnicas seleccionadas"
+	}
 }

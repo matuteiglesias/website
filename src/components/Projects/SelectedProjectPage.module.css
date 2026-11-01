@@ -96,6 +96,26 @@
 	color: #664d03;
 }
 
+.defined {
+	background: #e7efff;
+	color: #214a88;
+}
+
+.decision + .decision {
+	margin-top: 1rem;
+	padding-top: 1rem;
+	border-top: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.decision h3 {
+	font-size: 1rem;
+}
+
+.meta {
+	color: var(--ifm-color-emphasis-700);
+	font-size: 0.95rem;
+}
+
 .status {
 	border-left: 4px solid var(--ifm-color-primary);
 	padding: 1rem 1.25rem;
