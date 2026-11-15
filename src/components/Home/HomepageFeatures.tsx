@@ -152,6 +152,14 @@ const HomePageFeatures: FC = () => (
 						peer-reviewed paper and current manuscripts and applied work in progress.
 					</Translate>
 				</p>
+				<p>
+					<strong>
+						<Translate id="features.research.bookLabel">Book (2026):</Translate>
+					</strong>{' '}
+					<Link to="/books/mathematics-and-economics-of-aggregation">
+						<em>Mathematics and Economics of Aggregation</em>
+					</Link>
+				</p>
 				<Link to="/research">
 					<Translate id="features.research.link">Explore research</Translate>
 				</Link>

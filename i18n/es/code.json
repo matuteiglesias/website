@@ -466,5 +466,59 @@
 	},
 	"project.evidence.missing": {
 		"message": "Sin link"
+	},
+	"research.book.section": {
+		"message": "Libro"
+	},
+	"research.book.status": {
+		"message": "LIBRO · 2026"
+	},
+	"research.book.body": {
+		"message": "Una síntesis matemática en ocho capítulos sobre ponderaciones, heterogeneidad, covariación estocástica, agregación no lineal, redes económicas, escalamiento y medición."
+	},
+	"research.book.link": {
+		"message": "Conocer el libro"
+	},
+	"features.research.bookLabel": {
+		"message": "Libro (2026):"
+	},
+	"book.aggregation.back": {
+		"message": "← Investigación"
+	},
+	"book.aggregation.label": {
+		"message": "LIBRO · 2026"
+	},
+	"book.aggregation.lead": {
+		"message": "Un recorrido matemático desde observaciones microeconómicas heterogéneas hasta magnitudes agregadas con significado, y por los supuestos necesarios para interpretarlas."
+	},
+	"book.aggregation.summary": {
+		"message": "El libro conecta operadores de agregación, ponderaciones y concentración, momentos estocásticos, covarianzas, transformaciones no lineales, redes económicas y escalamiento poblacional. Su preocupación central es la frontera entre una identidad matemática exacta y una inferencia económica sustantiva."
+	},
+	"book.aggregation.chapters": {
+		"message": "capítulos"
+	},
+	"book.aggregation.sections": {
+		"message": "secciones"
+	},
+	"book.aggregation.year": {
+		"message": "autoría"
+	},
+	"book.aggregation.research": {
+		"message": "Contexto de investigación"
+	},
+	"book.aggregation.contact": {
+		"message": "Contactar al autor"
+	},
+	"book.aggregation.about": {
+		"message": "Acerca del libro"
+	},
+	"book.aggregation.aboutBody": {
+		"message": "Dirigido a economistas, físicos e investigadores cuantitativos con formación matemática, el libro vincula la agregación formal con los problemas empíricos de definir poblaciones, medir el tamaño económico, modelar la covariación e interpretar regularidades a gran escala. Sus ejemplos distinguen consecuencias matemáticas de supuestos sobre el comportamiento económico."
+	},
+	"book.aggregation.contents": {
+		"message": "Contenido"
+	},
+	"book.aggregation.publication": {
+		"message": "Se está trabajando en las vías de publicación. Para consultas académicas o profesionales, contactar al autor."
 	}
 }

@@ -78,6 +78,33 @@ export default function Research(): JSX.Element {
 					<section className={styles.lane}>
 						<div className={styles.laneHeader}>
 							<h2>
+								<Translate id="research.book.section">Book</Translate>
+							</h2>
+						</div>
+						<div className={styles.cardGrid}>
+							<article className={styles.card}>
+								<p className={styles.status}>
+									<Translate id="research.book.status">BOOK · 2026</Translate>
+								</p>
+								<h3>
+									<em>Mathematics and Economics of Aggregation</em>
+								</h3>
+								<p>
+									<Translate id="research.book.body">
+										An eight-chapter mathematical synthesis of weights, heterogeneity, stochastic comovement, nonlinear
+										aggregation, economic networks, scaling and measurement.
+									</Translate>
+								</p>
+								<Link to="/books/mathematics-and-economics-of-aggregation">
+									<Translate id="research.book.link">Explore the book</Translate>
+								</Link>
+							</article>
+						</div>
+					</section>
+
+					<section className={styles.lane}>
+						<div className={styles.laneHeader}>
+							<h2>
 								<Translate id="research.outputs.title">Selected outputs</Translate>
 							</h2>
 						</div>
